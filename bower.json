@@ -1,0 +1,31 @@
+{
+  "name": "jimev-theme",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lhasselb/jimev-theme",
+  "authors": [
+    "lhasselb <guggelimehl@googlemail.com>"
+  ],
+  "description": "A theme using HTML5 Boilerplate, SASS versions of Twitter Bootstrap and Font Awesome, and Bower and Grunt",
+  "keywords": [
+    "silverstripe",
+    "twitter",
+    "bootstrap",
+    "font",
+    "awesome"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-legacy": "jquery#1",
+    "jquery": "jquery#2",
+    "modernizr": "~3.3.1",
+    "bootstrap-sass": "~3.3.6",
+    "font-awesome": "~4.6.3"
+  }
+}
