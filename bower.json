@@ -24,7 +24,7 @@
   "dependencies": {
     "jquery-legacy": "jquery#1",
     "jquery": "jquery#2",
-    "modernizr": "~3.3.1",
+    "modernizr": "~2.7.1",
     "bootstrap-sass": "~3.3.6",
     "font-awesome": "~4.5.0"
   },

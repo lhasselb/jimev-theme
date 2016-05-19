@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     // Configurable variables
     var config = {
         // Change this to be the name of your theme:
-        themeName: 'bootstrap-base',
+        themeName: 'jimev-theme',
         faviconBackgroundColor: '#ffffff',
         responsiveImageQuality: 70,
     };
