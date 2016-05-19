@@ -11,5 +11,11 @@ A theme using SASS versions of Twitter Bootstrap and Font Awesome, and Bower and
 - [grunt](http://gruntjs.com/ "grunt") v1.0.1
 - [grunt-cli](https://github.com/gruntjs/grunt-cli "grunt-cli") v1.2.0
 
-`npm init -> package.json`
+Use `npm init` to create a package.json file.
+package.json contains the required (node-based) modules for grunt or gulp.
+
+The file `bower.json` contains extensions or libraries used within your project like jQuery or Bootstrap (`bower install <package> --save-dev`). 
+
+# Silverstripe #
+Add a file called "\_manifest\_exclude" to the folders bower\_components and node\_modules
 
