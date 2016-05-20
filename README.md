@@ -18,5 +18,5 @@ package.json contains the required (node-based) modules for grunt or gulp.
 The file `bower.json` contains extensions or libraries used within your project like jQuery or Bootstrap (`bower install <package> --save-dev`). 
 
 # Silverstripe #
-Add a file called "\_manifest\_exclude" to the folders bower\_components and node\_modules
+Add a file called "\_manifest\_exclude" to the folders bower\_components and node\_modules to exclude those folders from being utilized while `dev/build`. 
 

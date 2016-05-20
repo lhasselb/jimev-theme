@@ -9,6 +9,8 @@
 // Font awesome (leave out the helpers, as they do more harm than good)
 //@import "../bower_components/font-awesome-sass/assets/stylesheets/font-awesome-compass";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// simple-line-icons https://github.com/thesabbir/simple-line-icons
+@import "../../bower_components/simple-line-icons/scss/simple-line-icons.scss";
 
 // Components: Custom
 @import "mixins/responsive-bg";

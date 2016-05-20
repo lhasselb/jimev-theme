@@ -19,9 +19,7 @@
 	}
 </script>
 
-
-<% if 1 %>
-
+<% if isDev %>
 	<!--<script src="{$ThemeDir}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>-->
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -35,14 +33,10 @@
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-	
 	<script src="$ThemeDir/dist/javascript/plugins.js"></script>
 	<script src="$ThemeDir/dist/javascript/main.js"></script>
-
 <% else %>
-
 	<script src="$ThemeDir/dist/javascript/script.min.js"></script>
-
 <% end_if %>
 
 <% if SiteConfig.GACode %>
