@@ -1,4 +1,4 @@
-// Header 
+// Header
 $layout_full_page:                                                              'no';  // yes or no
 $header_class:																	'6';
 $header_desktop-bg-color:														#2f353b;
@@ -9,25 +9,25 @@ $header_min_desktop_shadow:														none;
 
 $header_zindex:			 														$zindex-navbar;
 $header_transition: 															0.2s;
-$header_height:                                                   				67px;  
+$header_height:                                                   				67px;
 $topbar_height:																	44px;
-$header_on-scroll-height:                                         				67px; 
+$header_on-scroll-height:                                         				67px;
 
 // Brand
 $brand-link-font-color:  														#ebedf2;
 $brand-link-font-color-on-hover:  												#ff6b57;
 
-$top-menu_font-color:															#aeb8c2;  
+$top-menu_font-color:															#aeb8c2;
 $top-menu_icon-font-color:														#aeb8c2;
 
 // Mega Menu
-$header_desktop_mega-menu-primary-link-padding: 								25px 25px 22px 25px; 
-$header_desktop_mega-menu-btn-margin: 											18px 25px 7px 25px; 
-$header_desktop_mega-menu-btn-icon-margin: 										8px 10px 0px 10px;   
-$header_desktop_mega-menu-quick-sidebar-toggler-padding:						28px 25px 15px 25px;   
-  
+$header_desktop_mega-menu-primary-link-padding: 								25px 25px 22px 25px;
+$header_desktop_mega-menu-btn-margin: 											18px 25px 7px 25px;
+$header_desktop_mega-menu-btn-icon-margin: 										8px 10px 0px 10px;
+$header_desktop_mega-menu-quick-sidebar-toggler-padding:						28px 25px 15px 25px;
+
 $header_desktop_min-header-mega-menu-primary-link-padding: 						23px 15px 21px 15px;
-$header_desktop_min-header_mega-menu-btn-margin: 								15px 15px 16px 15px; 
+$header_desktop_min-header_mega-menu-btn-margin: 								15px 15px 16px 15px;
 $header_desktop_min-header_mega-menu-btn-icon-margin: 							6px 5px 7px 5px;
 $header_desktop_min-header_mega-menu-quick-sidebar-toggler-padding:				26px 0 24px 15px;
 
@@ -35,12 +35,12 @@ $header_desktop_mega-menu-quick-search-close-icon-top:							35px;
 $header_desktop_mega-menu-quick-search-close-icon-right:						8px;
 $header_desktop_mega-menu-quick-search-form-control-padding:					20px 20px 20px 5px;
 
-$mega-menu_desktop_primary-link-font-color:										#ffffff; 
+$mega-menu_desktop_primary-link-font-color:										#ffffff;
 $mega-menu_desktop_primary-link-font-color-on-hover:							#ffffff;
-$mega-menu_desktop_primary-link-font-color-on-active:							#ffffff;  
+$mega-menu_desktop_primary-link-font-color-on-active:							#ffffff;
 
 $mega-menu_desktop_min-header-bg-color:											$header_desktop-bg-color;
-$mega-menu_desktop_min-header-primary-link-font-color:							#ffffff;  
+$mega-menu_desktop_min-header-primary-link-font-color:							#ffffff;
 
 $quick-search_mobile_input-font-color:                                       	darken($general-head-font-color, 20%);
 $quick-search_mobile_input-placeholder-color:                        		 	darken($general-head-font-color, 25%);
@@ -64,7 +64,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 			}
 
 			> .c-logo {
-				display: inline-block;					
+				display: inline-block;
 				position: relative;
 
 				&:after {
@@ -74,7 +74,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 					content: "";
 					width: 1px;
 					background: #dfe4e8;
-					height: 32px;
+					height: 55px; /*32px*/
 					display: inline-block;
 				}
 			}
@@ -89,14 +89,14 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 
 				> li {
 					display: inline-block;
-			   		padding: 3px 3px 5px 3px; 
+			   		padding: 3px 3px 5px 3px;
 
 		    		> a {
-		    			font-size: 16px;
+		    			font-size: 24px; /*lh:16px*/
 
 		    			> i {
 		    				color: $top-menu_icon-font-color;
-		    				font-size: 16px;
+		    				font-size: 24px; /*lh:16px*/
 		    				padding: 4px;
 		    			}
 		    		}
@@ -118,7 +118,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 					}
 
 					> .btn {
-						margin-top: -4px;  
+						margin-top: -4px;
 					}
 
 					&.c-divider {
@@ -144,12 +144,12 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 
 @media (min-width: $screen-md-min) { /* 992px */
 	.c-layout-header.c-layout-header-6 {
-		//	Topbar  
+		//	Topbar
 		.c-navbar {
 			// Main markup
 			line-height: 0px;
 
-			.c-mega-menu {			
+			.c-mega-menu {
 				float: none;
 				display: block;
 				text-align: center;
@@ -157,19 +157,19 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 
 				.c-layout-quick-search-shown & {
 					display: none;
-				}     
+				}
 
 				> .nav.navbar-nav {
 					line-height: 0px;
 					float: none;
 					display: inline-block;
 
-					> li {     
+					> li {
 						margin: 0 !important;
 						padding: 0 !important;
 						// link
-						> .c-link { 
-							padding: $header_desktop_mega-menu-primary-link-padding;    
+						> .c-link {
+							padding: $header_desktop_mega-menu-primary-link-padding;
 							min-height: $header_height;
 						}
 
@@ -193,7 +193,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 						// icon
 						> .c-btn-icon {
 							margin: $header_desktop_mega-menu-btn-icon-margin;
-						}  
+						}
 
 						/*
 						.c-menu-type-mega {
@@ -201,9 +201,9 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 						}
 						*/
 					}
-				}	      	
+				}
 			}
-		}   
+		}
 
 		// Quick search
 		.c-quick-search {
@@ -223,7 +223,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 	.c-layout-header.c-layout-header-6.c-navbar-fluid {
 		.c-navbar {
 			width: 100%;
-			float: none;     
+			float: none;
 			display: block;
 
 			.c-mega-menu {
@@ -263,7 +263,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
   	}
 
   	.c-page-on-scroll.c-layout-header-fixed .c-layout-header.c-layout-header-6 {
-  		height: $header_on-scroll-height;	
+  		height: $header_on-scroll-height;
   	}
 }
 
@@ -281,8 +281,8 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 				display: block;
 				padding: 0;
 				margin: 10px 0;
-				@include clearfix();	
-				text-align: right;	
+				@include clearfix();
+				text-align: right;
 
 				.c-links {
 					float: right;
@@ -292,17 +292,17 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 							padding-right: 0;
 						}
 					}
-				}	
+				}
 			}
 
-			.c-brand {		
+			.c-brand {
 				width: 100%;
-				display: block;				
+				display: block;
 				float: none;
 				@include clearfix();
 				margin: 10px 0 20px 0;
 
-				.c-layout-quick-search-shown & {  
+				.c-layout-quick-search-shown & {
 					display: none;
 				}
 
@@ -315,26 +315,26 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 				}
 
 				$general-toggler-color: #f8f9fa;
-			 	
+
 			 	> .c-hor-nav-toggler {
 			 		float: right;
 			 		background: $general-toggler-color;
 			 		padding: 5px 7px;
-			 		position: relative; 
+			 		position: relative;
 			 		top: 2px;
 
-					> .c-line { 
+					> .c-line {
 						background-color: darken($general-toggler-color, 30%);
 					}
 
 					&:active,
 					&:focus,
 					&:hover {
-						background: darken($general-toggler-color, 5%); 
+						background: darken($general-toggler-color, 5%);
 
-						> .c-line { 
+						> .c-line {
 							background-color: darken($general-toggler-color, 35%);
-						}	 
+						}
 					}
 			 	}
 
@@ -359,8 +359,8 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 		.c-navbar {
 			height: auto;
 			.c-mega-menu {
-				.c-layout-quick-search-shown & {  
-					display: none;   
+				.c-layout-quick-search-shown & {
+					display: none;
 				}
 
 				margin-bottom: 0px;
@@ -373,8 +373,8 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 			margin-top: 0;
 
 			> .form-control {
-				background: none;    
-				@include placeholder($quick-search_mobile_input-placeholder-color);  
+				background: none;
+				@include placeholder($quick-search_mobile_input-placeholder-color);
 				color: $quick-search_mobile_input-font-color;
 				padding: 25px 10px 35px 10px;
 				height: 55px;
@@ -383,7 +383,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 			// close icon
 			> span {
 				top: 0px;
-				color: $quick-search_mobile_input-font-color; 
+				color: $quick-search_mobile_input-font-color;
 			}
 		}
 	}

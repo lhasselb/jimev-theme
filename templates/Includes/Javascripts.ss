@@ -1,3 +1,5 @@
+<!-- BEGIN: CORE PLUGINS -->
+
 <!-- Grab Google CDN's jQuery, fall back to local if offline -->
 <!--<%-- for some reason SS strips/interpretes the single escape '\', so we need to double-escape: '\\\' --%>-->
 <script>
@@ -18,9 +20,11 @@
 		}
 	}
 </script>
+<script src="$ThemeDir/dist/javascript/plugins/jquery-migrate.min.js" type="text/javascript"></script>
 
 <% if isDev %>
-	<!--<script src="{$ThemeDir}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>-->
+<script src="{$ThemeDir}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<!--
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
@@ -33,19 +37,94 @@
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
 	<script src="$ThemeDir/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+-->
 	<script src="$ThemeDir/dist/javascript/plugins.js"></script>
 	<script src="$ThemeDir/dist/javascript/main.js"></script>
 <% else %>
 	<script src="$ThemeDir/dist/javascript/script.min.js"></script>
 <% end_if %>
 
-<% if SiteConfig.GACode %>
-<script>
-	window._gaq = [['_setAccount','$SiteConfig.GACode'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-	});
-</script>
-<% end_if %>
-
-
+    <script src="$ThemeDir/dist/javascript/plugins/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/reveal-animate/wow.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/scripts/reveal-animate/reveal-animate.js" type="text/javascript"></script>
+<!-- END: CORE PLUGINS -->
+<!-- BEGIN: LAYOUT PLUGINS -->
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+<!-- END: LAYOUT PLUGINS -->
+<!-- BEGIN: THEME SCRIPTS -->
+    <script src="$ThemeDir/dist/javascript/components.js" type="text/javascript"></script>
+    <script src="$ThemeDir/dist/javascript/app.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function()
+        {
+            App.init(); // init core
+        });
+    </script>
+<!-- END: THEME SCRIPTS -->
+<!-- BEGIN: PAGE SCRIPTS -->
+    <script>
+        $(document).ready(function()
+        {
+            var slider = $('.c-layout-revo-slider .tp-banner');
+            var cont = $('.c-layout-revo-slider .tp-banner-container');
+            var api = slider.show().revolution(
+            {
+                sliderType: "standard",
+                sliderLayout: "fullscreen",
+                responsiveLevels: [2048, 1024, 778, 320],
+                gridwidth: [1240, 1024, 778, 320],
+                gridheight: [868, 768, 960, 720],
+                delay: 15000,
+                startwidth: 1170,
+                startheight: App.getViewPort().height,
+                navigationType: "hide",
+                navigationArrows: "solo",
+                touchenabled: "on",
+                navigation:
+                {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "on",
+                    bullets:
+                    {
+                        style: "round",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        hide_under: 0,
+                        hide_over: 9999,
+                        direction: "horizontal",
+                        h_align: "right",
+                        v_align: "bottom",
+                        space: 5,
+                        h_offset: 60,
+                        v_offset: 60,
+                    },
+                },
+                spinner: "spinner2",
+                fullScreenOffsetContainer: '.c-layout-header',
+                shadow: 0,
+                hideTimerBar: "on",
+                hideThumbsOnMobile: "on",
+                hideNavDelayOnMobile: 1500,
+                hideBulletsOnMobile: "on",
+                hideArrowsOnMobile: "on",
+                hideThumbsUnderResolution: 0
+            });
+        }); //ready
+    </script>
+<!-- END: PAGE SCRIPTS -->

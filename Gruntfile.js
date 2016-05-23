@@ -411,9 +411,9 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'dist/javascript/script.min.js': [
-                        'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-                        'src/javascript/plugins.js',
-                        'src/javascript/main.js'
+                        /*'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',*/
+                        'src/javascript/components.js',
+                        'src/javascript/app.js'
                     ]
                 }
             }

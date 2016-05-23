@@ -1,13 +1,21 @@
-<div class="container main">
-    <div class="row">
-        <aside class="col-lg-4 col-lg-push-8" role="complementary">
-        <% include SideBar %>
-        </aside>
-        <div class="col-lg-8 col-lg-pull-4 content" role="main">
-        	<h1>$Title</h1>
-        	$Content
-            $Form
-        	$PageComments
+<!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+<aside class="c-layout-quick-sidebar" role="complementary">
+<%-- include SideBar --%>
+</aside>
+<!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+<!-- BEGIN: PAGE CONTAINER -->
+<div class="c-layout-page">
+    <!-- BEGIN:-->
+    <div class="c-content-box c-size-md c-bg-white" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>$Title</h1>
+                    $Content
+                    $Form
+                </div>
+            </div>
         </div>
     </div>
+    <!-- END:-->
 </div>

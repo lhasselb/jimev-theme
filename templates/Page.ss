@@ -13,11 +13,21 @@
 	<% base_tag %>
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
+    <script src="$ThemeDir/bower_components/headjs/dist/1.0.0/head.min.js"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
     <!-- contains bootstrap, font-awesome & simple-line-icons -->
 	<link rel="stylesheet" href="$ThemeDir/dist/css/style.css">
+    <link href="$ThemeDir/dist/javascript/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+    <link href="$ThemeDir/dist/javascript/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+    <!--<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="$ThemeDir/dist/javascript/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="$ThemeDir/dist/javascript/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
     <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN: BASE PLUGINS  -->
+
+    <!-- END: BASE PLUGINS -->
     <!-- BEGIN THEME STYLES -->
     <link href="$ThemeDir/dist/css/plugins.css" rel="stylesheet" type="text/css">
     <link href="$ThemeDir/dist/css/components.css" rel="stylesheet" type="text/css">
@@ -36,7 +46,9 @@ $Layout
 
 <% include Footer %>
 
-<div id="back-to-top" data-spy="affix" data-offset-top="100"><a href="#" class="btn btn-default"><i class="fa fa-chevron-up"><span class="hide">Back to Top</span></i></a></div>
+<!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
+<div class="c-layout-go2top"><i class="icon-arrow-up"></i></div>
+<!-- END: LAYOUT/FOOTERS/GO2TOP -->
 
 <% include Javascripts %>
 
