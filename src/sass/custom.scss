@@ -1,0 +1,32 @@
+/* Add styling for selected links (missing a href) */
+.c-active span.c-link.dropdown-toggle {
+                        line-height: 20px;
+                        position: relative;
+                        display: block;
+}
+
+/* Style logo height and font-size for icon */
+.c-layout-header.c-layout-header-6 {
+    .c-topbar {
+        .c-brand {
+            .c-layout-quick-search-shown & {
+            }
+            > .c-logo {
+                &:after {
+                    height: 55px;
+                }
+            }
+            > .c-icons {
+                > li {
+                    > a {
+                        font-size: 24px;
+
+                        > i {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -25,9 +25,9 @@
 @mixin border-radius($radius, $important: '') {
   -webkit-border-radius: $radius#{$important};
   -moz-border-radius: $radius#{$important};
-  -ms-border-radius: $radius#{$important};
-  -o-border-radius: $radius#{$important};
-  border-radius: $radius#{$important};
+  -ms-border-radius: $radius#{$important};  
+  -o-border-radius: $radius#{$important};  
+  border-radius: $radius#{$important}; 
 }
 
 // Placeholder text
@@ -65,7 +65,7 @@
 
 @mixin reset-padmar() {
     padding: 0;
-    margin: 0;
+    margin: 0;  
 }
 
 // Animation

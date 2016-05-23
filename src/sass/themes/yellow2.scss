@@ -8,13 +8,13 @@ THEME COLOR - DEFAULT
 @import '../_colors';  
 
 // Base color
-$theme-name: 					default;
+$theme-name: 					yellow2;
 $base-color: 					map-get($theme-colors, $theme-name);
 
 // Link Settings
 $link-font-color-on-hover:   	$base-color;
 $link-font-color-on-active:   	$base-color;
-    
+   
 // Text Settings
 $text-font-color:   			$base-color;
 

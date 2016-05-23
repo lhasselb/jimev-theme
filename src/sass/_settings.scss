@@ -4,7 +4,7 @@
 // Extra small screen / phone
 $screen-xs-min:              					480px !default;
 
-// Small screen / tablet
+// Small screen / tablet  
 $screen-sm-min:              					768px !default;
 
 // Medium screen / desktop
@@ -13,7 +13,7 @@ $screen-md-min:              					992px !default;
 // Large screen / wide desktop
 $screen-lg-min:             	 				1200px !default;
 
-// Large scree / wider desktop
+// Large scree / wider desktop      
 $screen-lg-med:                     			1260px !default;
 
 // So media queries don't overlap when required, provide a maximum
@@ -23,7 +23,7 @@ $screen-md-max:              					($screen-lg-min - 1) !default;  // 1199px
 
 // Brand Colors:
 
-$brand-default: 								darken(#b7c0ce, 10%);
+$brand-default: 								darken(#b7c0ce, 10%);  
 $brand-primary: 								#5e9cd1;
 $brand-success: 								#5dc09c;
 $brand-info:	 								#4eabe6;
@@ -72,9 +72,9 @@ $layout-fluid-padding:							0 100px;
 
 //Theme colors
 $theme-colors: (
-	default:    	#2f87aa,
+	default:    	#32c5d2,
 
-	green1:     	#2f87aa,
+	green1:     	#52c9ba,
 	green2:     	#5dc09c,
 	green3:     	#84c68f,
 
@@ -92,7 +92,7 @@ $theme-colors: (
 
 	blue1:     		#6e8cd7,
 	blue2:   		#5893dd,
-	blue3:   		#57bfe1,
+	blue3:   		#57bfe1,  
 
 	brown1:     	#8a7f68,
 	brown2:   		#685e47,

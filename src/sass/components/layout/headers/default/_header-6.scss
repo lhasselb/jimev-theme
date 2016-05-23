@@ -74,7 +74,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 					content: "";
 					width: 1px;
 					background: #dfe4e8;
-					height: 55px; /*32px*/
+					height: 32px;
 					display: inline-block;
 				}
 			}
@@ -92,11 +92,11 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 			   		padding: 3px 3px 5px 3px;
 
 		    		> a {
-		    			font-size: 24px; /*lh:16px*/
+		    			font-size: 16px;
 
 		    			> i {
 		    				color: $top-menu_icon-font-color;
-		    				font-size: 24px; /*lh:16px*/
+		    				font-size: 16px;
 		    				padding: 4px;
 		    			}
 		    		}
