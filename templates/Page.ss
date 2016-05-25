@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js ie9" lang="$ContentLocale"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js" lang="$ContentLocale"> <![endif]-->
+
 
 <head>
     <meta charset="utf-8">
@@ -13,7 +13,6 @@
 	<% base_tag %>
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
-    <script src="$ThemeDir/bower_components/headjs/dist/1.0.0/head.min.js"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
     <!-- contains bootstrap, font-awesome & simple-line-icons -->
