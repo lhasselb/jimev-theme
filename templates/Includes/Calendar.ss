@@ -1,21 +1,19 @@
 <!-- FullCalendar http://fullcalendar.io/-->
 <div id="calendar"></div>
+
 <!-- FullCalendar modal box start -->
-<div id="fullCalModal" class="modal fade">
+<div class="modal fade " id="fullCalModal" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">×</span><span class="sr-only">close</span>
-                </button>
-                <h4 id="modalTitle" class="modal-title"></h4>
-                <div id="modalLocation" class="modal-location"></div>
+        <div class="modal-content c-square">
+            <div class="modal-header c-no-border">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 id="modalTitle" class="c-font-24 c-font-sbold"></h3>
                 <div id="modalDate" class="modal-date"></div>
+                <div id="modalLocation" class="modal-location"></div>
             </div>
             <div id="modalBody" class="modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--<button class="btn btn-primary"><a id="eventUrl" target="_blank">Event Page</a></button>-->
+            <div class="modal-footer c-no-border">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Schlie­ßen</button>
             </div>
         </div>
     </div>
