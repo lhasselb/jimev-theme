@@ -50,7 +50,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 .c-layout-header.c-layout-header-6 {
 
 	.c-topbar {
-		padding: 24px 0;
+		padding: 19px 0; /*lh:24*/
 		background: #fff;
 		height: auto;
 
@@ -259,7 +259,7 @@ $quick-search_mobile_input-placeholder-color:                        		 	darken(
 	}
 
 	.c-layout-header-fixed.c-layout-header-6-topbar .c-layout-page {
-  		margin-top: 167px;
+  		margin-top: 167px; /*lh:178*/
   	}
 
   	.c-page-on-scroll.c-layout-header-fixed .c-layout-header.c-layout-header-6 {

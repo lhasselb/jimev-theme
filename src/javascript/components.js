@@ -698,5 +698,5 @@ $(document).ready(function () {
 	ContentCubeLatestPortfolio.init();
 	ContentCounterUp.init();
 	ContentFancybox.init();
-	ContentTwitter.init();
+	//ContentTwitter.init();
 });

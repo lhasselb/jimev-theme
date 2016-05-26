@@ -14,7 +14,6 @@
     </a>
     </li>
     <% end_if %>
-
 <% else %>
     <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
     <a href="$Link" title="$Title.XML" class="c-link dropdown-toggle">$MenuTitle.XML

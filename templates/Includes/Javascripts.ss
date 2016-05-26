@@ -179,27 +179,26 @@ head.ready([ "jQuery" ], function() {
                 eventSources: [
                     {
                         googleCalendarId: 'jimev.de_5rs1u41usnfck91lojqr3s6lds@group.calendar.google.com',
-                        color: '#E0C240'
+                        color: 'green'
                     },
                     {
                         googleCalendarId: 'jimev.de_m3bmcm2sr1r02s3d8nn7bfcg9o@group.calendar.google.com',
-                        color: '#0D7813'
+                        color: 'blue'
                     },
                     {
                         googleCalendarId: 'jimev.de_q3c4a9i2u0anqtcbsa7lmroohg@group.calendar.google.com',
-                        color: '#A32929'
+                        color: 'red'
                     },
                     {
                         googleCalendarId: 'jimev.de_vdb4ukbe2d4d1125677ea3b3o8@group.calendar.google.com',
-                        color: '#060D5E'
+                        color: 'yellow'
                     }
                 ],
                 timeFormat: 'H:mm',
 
                 eventClick:  function(event, jsEvent, view) {
                     //event.preventDefault();
-                    console.log(event);
-                    console.log(view);
+                    //console.log(event.start.format("LLL"));
 
                     $('#modalTitle').html(event.title);
                     $('#modalDate').html("Wann: " + event.start.format("LL") + " " + event.start.format("HH:mm") + " - " + event.end.format("HH:mm"));

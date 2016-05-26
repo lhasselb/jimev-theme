@@ -5,7 +5,7 @@
 <!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
 <!-- BEGIN: PAGE CONTAINER -->
 <div class="c-layout-page">
-    <!-- BEGIN:-->
+<!-- BEGIN: CONTENT/MISC/ABOUT-3 -->
     <div class="c-content-box c-size-md c-bg-white" role="main">
         <div class="container">
             <div class="row">
@@ -17,5 +17,6 @@
             </div>
         </div>
     </div>
-    <!-- END:-->
+<!-- END: CONTENT/MISC/ABOUT-3 -->
 </div>
+<!-- END: PAGE CONTAINER -->
