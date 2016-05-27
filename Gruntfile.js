@@ -24,6 +24,7 @@ module.exports = function(grunt) {
                 'dist/css',
                 'dist/fonts',
                 'dist/images',
+                'dist/img',
                 'dist/javascript'
             ]
         },
@@ -130,6 +131,12 @@ module.exports = function(grunt) {
 //          },
             serve: {
                 files: [
+                    {
+                        expand: true,
+                        cwd: 'src/img/',
+                        src: ['**'],
+                        dest: 'dist/img'
+                    },
                     {
                         expand: true,
                         cwd: 'src/images/',

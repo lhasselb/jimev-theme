@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="$ContentLocale"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="$ContentLocale"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js ie9" lang="$ContentLocale"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="$ContentLocale"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="$ContentLocale"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="$ContentLocale"> <![endif]-->
 
-
+    <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -43,27 +43,39 @@
         <link href="$ThemeDir/dist/css/custom.css" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
         <% include Icons %>
-
         <script>themedir = '{$ThemeDir}';</script>
         <script src="{$ThemeDir}/bower_components/modernizr/modernizr.js"></script>
     </head>
 
-    <body class="c-layout-header-fixed c-layout-header-6-topbar">
-    <% include Header %>
-
-    $Layout
-
-    <% include Footer %>
-
+    <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collaps">
+        <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
+        <!-- BEGIN: HEADER -->
+        <% include Header %>
+        <!-- END: HEADER -->
+        <!-- END: LAYOUT/HEADERS/HEADER-1 -->
+        <!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+        <nav class="c-layout-quick-sidebar" role="complementary">
+        <%-- include SideBar --%>
+        </nav>
+        <!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+        <!-- BEGIN: PAGE CONTAINER -->
+        $Layout
+        <!-- END: PAGE CONTAINER -->
+        <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
+        <% include Footer %>
+        <!-- END: LAYOUT/FOOTERS/FOOTER-5 -->
     <!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
     <div class="c-layout-go2top">
         <i class="icon-arrow-up"></i>
     </div>
     <!-- END: LAYOUT/FOOTERS/GO2TOP -->
+    <!-- BEGIN: PLUGINS: moved to page types -->
+    <%-- include Javascripts --%>
+    <!-- BEGIN: PLUGINS moved to page types -->
     <!--[if lt IE 9]>
     <script type="text/javascript" src="{$ThemeDir}/dist/plugins/excanvas.min.js"></script>
     <![endif]-->
-    <%-- include Javascripts --%>
+
     </body>
 
 </html>

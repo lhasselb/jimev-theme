@@ -690,7 +690,7 @@ $(document).ready(function () {
 	LayoutCartMenu.init();
 	LayoutQuickSidebar.init();
 	LayoutGo2Top.init();
-	LayoutOnepageNav.init();
+	//LayoutOnepageNav.init();
 	LayoutThemeSettings.init();
 
 	// init plugin wrappers

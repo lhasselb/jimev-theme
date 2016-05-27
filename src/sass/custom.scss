@@ -1,4 +1,4 @@
-/* Add styling for selected links (missing a href) */
+/* Add styling for selected links (missing a href) for home icon */
 .c-active span.c-link.dropdown-toggle {
                         line-height: 20px;
                         position: relative;
@@ -6,6 +6,7 @@
 }
 
 /* Style logo height and font-size for icon */
+/*
 .c-layout-header.c-layout-header-6 {
     .c-topbar {
         .c-brand {
@@ -30,6 +31,7 @@
         }
     }
 }
+*/
 /*
 #container .view-cap, #container .view-container-border { background-color:#32c5d2;; }
 #container .mv-daynames-table { color:white; background:black; }
@@ -38,8 +40,15 @@
 /*#container .st-bg { background:black; }
 #container .st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }
 #container .st-dtitle { background:white; }*/
+/*
 #container .view-cap, #container .view-container-border { background-color:#5c6873; }
 #container .mv-daynames-table { color:white; background:#5c6873; }
 #container .mv-event-container { border-top:1px solid #5c6873; }
 //#container .st-bg { border-left:none; }
 #container .st-dtitle { border:none; background:white; }
+*/
+
+nav.c-top-menu.c-pull-right .c-links.c-theme-ul {
+    position: relative;
+    top: 8px;
+}
