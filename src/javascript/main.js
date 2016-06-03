@@ -21,6 +21,7 @@
                 var api = slider.show().revolution(
                 {
                     sliderType: "standard",
+                    lazyload:"on",
                     sliderLayout: "fullwidth",
                     delay: 15000,
                     autoHeight: 'off',
