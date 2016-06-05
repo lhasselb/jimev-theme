@@ -10,9 +10,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>$Title</h1>
-                    $Content
-                    $BasicMap
+                    <!--<h1>$Title</h1>
+                    $Content-->
+
+<div id="NewsContent">
+    <div class="NewsItem">
+        <h2>$Title</h2>
+        <p class="newsDate">$Date.Long</p>
+        $Content
+        <br />
+    </div>
+</div>
+
+
                 </div>
             </div>
         </div>

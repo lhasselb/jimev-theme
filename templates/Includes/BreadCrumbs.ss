@@ -1,5 +1,1 @@
-<% if $Level(2) %>
-	<nav itemprop="breadcrumb">
-	   	$Breadcrumbs
-	</nav>
-<% end_if %>
+<%if $Level(2) %>$Breadcrumbs<% end_if %>
