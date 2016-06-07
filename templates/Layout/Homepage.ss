@@ -53,4 +53,10 @@
                 </div>
             <!-- END: CONTENT/MISC/ABOUT-3 -->
         </div>
-
+        <% if LatestNews %>
+        <% loop LatestNews %>
+        <div>
+        <% include Homepage_NewsSummary %>
+        </div>
+        <% end_loop %>
+        <% end_if %>
