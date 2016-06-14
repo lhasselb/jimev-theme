@@ -23,14 +23,14 @@
                     $Content
 
 <div id="NewsContent">
-    <% if NewsItems %>
-        <% loop NewsItems %>
-            <% include NewsItemSummary %>
+    <% if Courses %>
+        <% loop Courses %>
+        <a href="$Link">$Title</a>
         <% end_loop %>
     <% else %>
-        <h3><%t NewsHolder "NOENTRIES" %></h3>
+        <h3>NO</h3>
     <% end_if %>
-    <% include NewsPagination %>
+    <%-- include NewsPagination --%>
 </div>
 
 
