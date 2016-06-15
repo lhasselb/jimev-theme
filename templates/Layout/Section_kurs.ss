@@ -20,23 +20,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+    <% with $Course %>
+                    $Title
+                    <br/>
                     $Content
-
-<div id="NewsContent">
-    <% if Courses %>
-        <% loop Courses %>
-        <div>
-            <h3>$Title</h3>
-            <a href="$Link">$Title</a>
-        </div>
-        <% end_loop %>
-    <% else %>
-        <h3>NO</h3>
-    <% end_if %>
-    <%-- include NewsPagination --%>
-</div>
-
-
+    <% end_with %>
                 </div>
             </div>
         </div>

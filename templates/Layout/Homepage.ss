@@ -38,7 +38,7 @@
                 <div class="c-content-box c-size-md c-bg-white" role="main">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 wow animate fadeInLeft">
+                            <div class="col-sm-12 wow animate fadeInLeft">
                                 <!-- Begin: Title 1 component -->
                                 <div class="c-content-title-1">
                                     <h3 class="c-font-uppercase c-font-bold">$Title</h3>
