@@ -47,20 +47,14 @@
         <script src="{$ThemeDir}/bower_components/modernizr/modernizr.js"></script>
     </head>
 
-    <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collaps">
+    <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">
         <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
         <!-- BEGIN: HEADER -->
         <% include Header %>
         <!-- END: HEADER -->
         <!-- END: LAYOUT/HEADERS/HEADER-1 -->
-        <!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
-        <nav class="c-layout-quick-sidebar" role="complementary">
-        <%-- include SideBar --%>
-        </nav>
         <!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
-        <!-- BEGIN: PAGE CONTAINER -->
         $Layout
-        <!-- END: PAGE CONTAINER -->
         <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
         <% include Footer %>
         <!-- END: LAYOUT/FOOTERS/FOOTER-5 -->

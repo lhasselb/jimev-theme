@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-12">
     <% with $Course %>
-                    $Title
+                    $CourseTitle
                     <br/>
                     $Content
     <% end_with %>
