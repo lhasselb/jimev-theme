@@ -1,8 +1,3 @@
-<!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
-<aside class="c-layout-quick-sidebar" role="complementary">
-<%-- include SideBar --%>
-</aside>
-<!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
 <!-- BEGIN: PAGE CONTAINER -->
 <div class="c-layout-page">
 <!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
@@ -20,6 +15,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+<h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold">$Title</h3>
                     $Content
                 </div>
             </div>

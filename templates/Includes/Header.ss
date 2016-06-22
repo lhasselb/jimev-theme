@@ -16,11 +16,11 @@
                     <nav class="c-top-menu c-pull-right">
                         <ul class="c-links c-theme-ul">
                             <li>
-                                <a href="#">Help</a>
+                                <a href="#">Kontakt</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#">Links</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
@@ -69,16 +69,10 @@
                             <button class="c-topbar-toggler" type="button">
                                 <i class="fa fa-ellipsis-v"></i>
                             </button>
-                            <button class="c-search-toggler" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
+
                         </div>
                         <!-- END: BRAND -->
                         <!-- BEGIN: QUICK SEARCH -->
-                        <form class="c-quick-search" action="#">
-                            <input type="text" name="query" placeholder="Type to search..." value="" class="form-control" autocomplete="off">
-                            <span class="c-theme-link">&times;</span>
-                        </form>
                         <!-- END: QUICK SEARCH -->
                         <!-- BEGIN: HOR NAV -->
                         <!-- BEGIN: LAYOUT/HEADERS/MEGA-MENU -->

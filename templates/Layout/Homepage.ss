@@ -1,7 +1,7 @@
         <div class="c-layout-page">
             <!-- BEGIN: PAGE CONTENT -->
             <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
-            <% include HomepageSlider %>
+            <% include Homepage_Slider %>
             <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
             <!-- BEGIN: CONTENT/MISC/ABOUT-3 -->
                 <div class="c-content-box c-size-md c-bg-white" role="main">
