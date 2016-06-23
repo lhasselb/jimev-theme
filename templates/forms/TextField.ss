@@ -1,1 +1,1 @@
-<input class="form-control" $AttributesHTML />
+<input class="form-control c-square c-theme" $AttributesHTML />

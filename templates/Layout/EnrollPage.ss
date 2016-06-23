@@ -23,11 +23,11 @@
                             <div class="c-content-panel">
                                 <div class="c-label">$Title</div>
                                 <div class="c-body">
-                                    <div class="c-content-title-1 c-title-md c-margin-b-20 clearfix">
+                                    <!--<div class="c-content-title-1 c-title-md c-margin-b-20 clearfix">
                                         <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
                                         <div class="c-line-center c-theme-bg"></div>
-                                        $EnrollForm
-                                    </div>
+                                    </div>-->
+                                    $EnrollForm
                                 </div>
                             </div>
                         </div>

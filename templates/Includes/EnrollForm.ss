@@ -2,7 +2,7 @@
 <form class="form-horizontal" $AttributesHTML>
 <% end_if %>
 	<% if Message %>
-	<div id="{$FormName}_error" class="alert alert-error message $MessageType">
+	<div id="{$FormName}_{$MessageType}" class="alert alert-$MessageType message $MessageType">
 		$Message
 	</div>
 	<% else %>

@@ -34,7 +34,7 @@
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
                                     <div class="c-desc">$Content
-                                        <a href="#">mehr...</a>
+                                        <a href="$Link">mehr...</a>
                                     </div>
                                     <div class="c-panel">
                                         <div class="c-date">am
