@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="c-content-blog-post-1-list">
-                                <% loop Courses %>
+                                <% loop PaginatedCourses %>
                                 <div class="c-content-blog-post-1">
                                     <% if ContentImage %>
                                     <div class="c-media">
@@ -33,8 +33,8 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
-                                    <div class="c-desc">$Content
-                                        <a href="$Link">mehr...</a>
+                                    <div class="c-desc">
+                                        $Content
                                     </div>
                                     <div class="c-panel">
                                         <div class="c-date">am
@@ -50,38 +50,26 @@
                                     </div>
                                 </div>
                                 <% end_loop %>
-                                <%-- include NewsPagination --%>
-                                <div class="c-pagination">
-                                    <ul class="c-content-pagination c-theme">
-                                        <li class="c-prev">
-                                            <a href="#">
-                                                <i class="fa fa-angle-left"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">1</a>
-                                        </li>
-                                        <li class="c-active">
-                                            <a href="#">2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">4</a>
-                                        </li>
-                                        <li class="c-next">
-                                            <a href="#">
-                                                <i class="fa fa-angle-right"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <% include CoursePagination %>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <!-- BEGIN: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
-                            <% include SectionSideBar %>
+                            <div class="c-content-ver-nav">
+                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                    <h3 class="c-font-bold c-font-uppercase">$Parent.Title</h3>
+                                    <div class="c-line-left c-theme-bg"></div>
+                                </div>
+                                <ul class="c-menu c-arrow-dot c-theme">
+                                <% loop $Menu(2) %>
+                                <% if LinkOrCurrent != current %>
+                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% else %>
+                                    <li>$MenuTitle.XML</li>
+                                <% end_if %>
+                                <% end_loop %>
+                                </ul>
+                            </div>
                             <!-- END: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
                         </div>
                     </div>

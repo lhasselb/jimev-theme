@@ -30,8 +30,8 @@ a:active {
 }
 
 /*
- Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
- properly apply the media queries in Bootstrap's CSS. To address this, 
+ Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't
+ properly apply the media queries in Bootstrap's CSS. To address this,
  you can optionally include the following CSS and JavaScript to work around this problem until Microsoft issues a fix.
 */
 
@@ -56,15 +56,15 @@ a:active {
 }
 
 /*
- Internet Explorer 10 doesn't differentiate device width from viewport width, 
- and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied 
+ Internet Explorer 10 doesn't differentiate device width from viewport width,
+ and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied
 */
 
 @-ms-viewport {
 	width: auto !important;
 }
 
-// Titles 
+// Titles
 
 h6 {
 	color: $general-head-font-color;
@@ -481,9 +481,9 @@ h1 {
 
 /* ios safari hacks */
 @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) {
-     .c-bg-parallax { 
+     .c-bg-parallax {
      	background-attachment: scroll !important;
-     } 
+     }
 }
 
 // Opacity

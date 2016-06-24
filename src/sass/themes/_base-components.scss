@@ -1,9 +1,11 @@
 // THEME COLOR BASE
 
-// Global 
+// Global
 
 a {
 	color: $general-head-font-color;
+    //color: $text-font-color; //lh
+    //font-weight:bold;//lh
 
 	&:active,
 	&:hover,
@@ -281,7 +283,7 @@ a {
 	}
 }
 
-// Buttons 
+// Buttons
 
 .c-theme-btn {
 
@@ -305,7 +307,7 @@ a {
 	}
 }
 
-// Form Controls 
+// Form Controls
 
 .c-theme.form-control {
 	&:focus,
@@ -315,7 +317,7 @@ a {
 	}
 }
 
-// Custom line icons 
+// Custom line icons
 
 .c-content-line-icon.c-theme {
 	background-image: url(../../img/content/line-icons/#{$theme-name}.png);
@@ -397,7 +399,7 @@ a {
 	}
 }
 
-// Accordion 1 
+// Accordion 1
 
 .c-content-accordion-1.c-theme {
 	.panel {

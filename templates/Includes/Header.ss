@@ -26,6 +26,10 @@
                             <li>
                                 <a href="#">FAQ</a>
                             </li>
+                            <li class="c-divider">|</li>
+                            <li>
+                                <a href="admin/">Login</a>
+                            </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">
                             <li class="c-lang dropdown c-last">
