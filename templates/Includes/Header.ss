@@ -20,7 +20,7 @@
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="#">Links</a>
+                                <a href="links/">Links</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
