@@ -24,7 +24,7 @@
                                         <div class="c-content-media-2-slider" data-slider="owl" data-single-item="true" data-auto-play="4000">
                                             <div class="owl-carousel owl-theme c-theme owl-single">
                                                 <div class="item">
-                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.URL); min-height: 460px;"> </div>
+                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.CroppedFocusedImage(758,230).URL); min-height: 230px;"> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -33,7 +33,7 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
-                                    <div class="c-desc">
+                                    <div class="typography c-desc">
                                         $Content
                                     </div>
                                     <div class="c-panel">

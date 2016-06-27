@@ -15,7 +15,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <img class="c-overlay-object img-responsive" src="$NewsImage.CroppedImage(340,100).URL" alt="">
+                                    <img class="c-overlay-object img-responsive" src="$NewsImage.CroppedFocusedImage(340,100).URL" alt="">
                                 </div>
                                 <% end_if %>
                                 <p>$NewsContent</p>
