@@ -11,7 +11,6 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <!-- BEGIN: CONTENT/MISC/ABOUT-3 -->
             <div class="c-content-box c-size-md c-bg-white" role="main">
                 <div class="container">
                     <div class="row">
@@ -23,6 +22,6 @@
                     </div>
                 </div>
             </div>
-            <!-- END: CONTENT/MISC/ABOUT-3 -->
+            <!-- END: PAGE CONTENT -->
         </div>
         <!-- END: PAGE CONTAINER -->

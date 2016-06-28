@@ -10,7 +10,7 @@
                             <div class="col-sm-12 wow animate fadeInLeft">
                                 <!-- Begin: Title 1 component -->
                                 <div class="c-content-title-1">
-                                    <h3 class="c-font-uppercase c-font-bold">$MenuTitle</h3>
+                                    <h3 class="c-font-uppercase c-font-bold">$Title</h3>
                                     <div class="c-line-left c-theme-bg"></div>
                                 </div>
                                 <!-- End-->

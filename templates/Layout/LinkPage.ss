@@ -11,20 +11,20 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <div class="c-content-box c-size-md c-bg-white">
+            <div class="typograhy c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="c-content-title-1">
                         <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
                         <div class="c-line-center c-theme-bg"></div>
                         <p class="c-center">$Content</p>
                     </div>
+                    <% loop Linkset %>
                     <div class="c-content-panel">
-                        <% loop Linkset %>
                         <div class="c-label">$Title</div>
                         <div class="c-body">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <table class="table table-striped table-hover">
+                                    <table class="table table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Link</th>
@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                        <% end_loop %>
                     </div>
+                    <% end_loop %>
                 </div>
             </div>
             <!-- END: PAGE CONTENT -->
