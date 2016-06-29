@@ -20,6 +20,14 @@
                     </div>-->
                     <div class="row">
                         <div class="col-md-12">
+<ul>
+<li>
+    <a href="#">
+        <span class="glyphicon glyphicon-chevron-right"> </span>
+        <span class="bs-glyphicon-class"> glyphicon glyphicon-chevron-right </span>
+    </a>
+</li>
+</ul>
                             <div class="c-content-panel">
                                 <div class="c-label">$Title</div>
                                 <div class="c-body">
