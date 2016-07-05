@@ -11,31 +11,47 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <div class="c-content-box c-size-md c-bg-white" role="main">
+            <div class="c-content-box c-size-lg c-overflow-hide c-bg-white" role="main">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>$Title</h1>
-                            <p>$Content</p>
-                            <% with $FormData %>
-                            <h2>Hallo $FirstName $LastName,</h2>
-                            <p>der Mitgliedsantrag ist mit folgenden Daten bei uns eingegangen:</p>
-                            <p>$Salutation $FirstName $LastName</p>
-                            <p>$Birthday</p>
-                            <p>$Street $StreetNumber, $Nationality - $Zip $City</p>
-                            <p>$Email</p>
-                            <p>$Mobil</p>
-                            <p>$Phone</p>
-                            <p>$TypeID</p>
-                            <p>Mitglied ab $Since</p>
-                            <h2>Bankverbindung</h2>
-                            <p>$AccountHolderFirstName $AccountHolderLastName</p>
-                            <p>$AccountHolderStreet $AccountHolderStreetNumber, $AccountHolderZip $AccountHolderCity</p>
-                            <p>$Iban</p>
-                            <p>$Bic</p>
-                            <% end_with %>
-
+                    <div class="c-shop-order-complete-1 c-content-bar-1 c-align-left c-bordered c-theme-border c-shadow">
+                        <div class="c-content-title-1">
+                            <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
+                            <div class="c-line-center c-theme-bg"></div>
                         </div>
+                        <div class="c-theme-bg">
+                            <p class="c-message c-center c-font-white c-font-20 c-font-sbold">
+                                <i class="fa fa-check"></i>$Content.HTML()</p>
+                        </div>
+                        <% with $FormData %>
+                        <div class="c-customer-details row" data-auto-height="true">
+                            <div class="col-md-6 col-sm-6 c-margin-t-20">
+                                <div data-height="height">
+                                    <h3 class=" c-margin-b-20 c-font-uppercase c-font-22 c-font-bold">Kontaktdaten</h3>
+                                    <ul class="list-unstyled">
+                                        <li>Name: $Salutation $FirstName $LastName</li>
+                                        <li>Geburtstag: $Birthday</li>
+                                        <li>Adressse: $Street $StreetNumber <br />$Nationality - $Zip $City</li>
+                                        <li>E-Mail: $Email</li>
+                                        <li>Mobil: $Mobil</li>
+                                        <li>Telefon: $Phone</li>
+                                        <li>Typ: $TypeID</li>
+                                        <li>Mitgliedschaft startet am $Since</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 c-margin-t-20">
+                                <div data-height="height">
+                                    <h3 class=" c-margin-b-20 c-font-uppercase c-font-22 c-font-bold">Bankverbindung</h3>
+                                    <ul class="list-unstyled">
+                                        <li>$AccountHolderFirstName $AccountHolderLastName</li>
+                                        <li>$AccountHolderStreet $AccountHolderStreetNumber <br />$AccountHolderZip $AccountHolderCity</li>
+                                        <li>$Iban</li>
+                                        <li>$Bic</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <% end_with %>
                     </div>
                 </div>
             </div>
