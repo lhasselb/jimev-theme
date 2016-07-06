@@ -9,14 +9,3 @@
 // Font awesome (leave out the helpers, as they do more harm than good)
 //@import "../bower_components/font-awesome-sass/assets/stylesheets/font-awesome-compass";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
-
-// Components: Custom
-@import "mixins/responsive-bg";
-//@import "backtotop.scss";
-
-test {
-	transition: all 4s ease;
-	// this is a test.jpg background image in images/backgrounds/
-	@include responsive-bg('test');
-}
-

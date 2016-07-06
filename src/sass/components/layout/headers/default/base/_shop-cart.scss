@@ -31,7 +31,7 @@
 	// shopping cart
 	.c-cart-menu{
 		border: 1px solid #f3f3f3;
-		display:none;
+		display:none; 
 		width:390px;
 		background: #ffffff;
 		position:absolute;
@@ -58,6 +58,10 @@
 
 		.c-cart-menu-items{
 			padding:0;
+			max-height: 500px;
+			overflow-y:auto;
+			width:100%;
+
 			>li{
 				border-top:1px solid #f3f3f3;
 				padding: 20px;
@@ -148,12 +152,16 @@
 
 }
 
-@media (max-width: $screen-xs-max){ 
+@media (max-width: $screen-xs-max){  
 	.c-layout-header{
 
 		.c-cart-menu{
 			width:100%;
 			right: 0;
+
+			.c-cart-menu-items{
+				max-height: 300px;
+			}
 		}
 
 		.container-fluid {

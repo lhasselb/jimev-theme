@@ -308,8 +308,8 @@ var App = function() {
                 }
                 pos = pos + (offeset ? offeset : -1 * el.height());
             }
-
-            $('html,body').animate({
+            // animate changed to velocity
+            $('html,body').velocity({
                 scrollTop: pos
             }, 'slow');
         },

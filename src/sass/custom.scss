@@ -56,3 +56,20 @@ nav.c-top-menu.c-pull-right .c-links.c-theme-ul {
 label.error {
     color :red;
 }
+
+.c-linkfooter li {
+    display: inline;
+}
+
+
+@media (min-width: 992px) {
+    .c-layout-header .c-brand {
+        margin: 16px 0 18px 0;
+    }
+
+    .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
+        transition: margin 0.2s;
+        margin: 4px 0 1px 0;
+    }
+}
+

@@ -13,6 +13,7 @@
             <!-- BEGIN: PAGE CONTENT -->
             <div class="c-content-box c-size-lg c-overflow-hide c-bg-white" role="main">
                 <div class="container">
+                    <div class="alert alert-success" role="alert">Diese Information wurde gesendet an $FormData.Email</div>
                     <div class="c-shop-order-complete-1 c-content-bar-1 c-align-left c-bordered c-theme-border c-shadow">
                         <div class="c-content-title-1">
                             <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
@@ -20,7 +21,7 @@
                         </div>
                         <div class="c-theme-bg">
                             <p class="c-message c-center c-font-white c-font-20 c-font-sbold">
-                                <i class="fa fa-check"></i>$Content.HTML()</p>
+                                <i class="fa fa-check"></i>$Content</p>
                         </div>
                         <% with $FormData %>
                         <div class="c-customer-details row" data-auto-height="true">
