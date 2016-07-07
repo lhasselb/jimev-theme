@@ -12,7 +12,7 @@
                                     </li>
                                     <li class="c-divider">|</li>
                                     <li>
-                                        <a href="#">Login</a>
+                                        <a href="admin/">Login</a>
                                     </li>
                                 </ul>
                             </div>
