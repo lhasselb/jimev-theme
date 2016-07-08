@@ -4,7 +4,7 @@
             <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
                 <div class="container">
                     <div class="c-page-title c-pull-left">
-                        <h3 class="c-font-uppercase c-font-sbold">$Title</h3>
+                        <h3 class="c-font-uppercase c-font-sbold">$MenuTitle</h3>
                     </div>
                     <% include BreadCrumbs %>
                 </div>
@@ -14,11 +14,35 @@
             <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1>$Title</h1>
-                            $Content
-                            $BasicMap
+                        <div class="c-content-panel">
+                            <div class="c-label">$Title</div>
+                            <div class="c-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>$Content</p>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Wann</td>
+                                                    <td>$Schedule</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Wo</td>
+                                                    <td>$Location</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Ansprechpartner</td>
+                                                    <td>$Contact</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>$LocationDescription</p>
+                                    $BasicMap
+                                </div>
+                            </div>
                         </div>
+
                         <!--<div class="col-md-3">
                             <div class="c-content-ver-nav">
                                 <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
