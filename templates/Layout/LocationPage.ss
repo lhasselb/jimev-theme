@@ -18,7 +18,7 @@
                             <div class="c-label">$Title</div>
                             <div class="c-body">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 typography">
                                         <p>$Content</p>
                                         <table class="table table-hover">
                                             <tbody>
@@ -38,7 +38,8 @@
                                         </table>
                                     </div>
                                     <p>$LocationDescription</p>
-                                    $BasicMap
+                                    <%--$BasicMap--%>
+                                    <div>$Map</div>
                                 </div>
                             </div>
                         </div>
