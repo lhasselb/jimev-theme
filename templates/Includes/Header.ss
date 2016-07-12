@@ -24,7 +24,7 @@
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="#">FAQ</a>
+                                <a href="faq/">FAQ</a>
                             </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">
