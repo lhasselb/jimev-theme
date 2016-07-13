@@ -16,7 +16,7 @@
                     <nav class="c-top-menu c-pull-right">
                         <ul class="c-links c-theme-ul">
                             <li>
-                                <a href="#">Kontakt</a>
+                                <a href="kontakt/">Kontakt</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
