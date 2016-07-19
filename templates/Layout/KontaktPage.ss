@@ -14,27 +14,17 @@
             <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <h1>$Title</h1>
                             $Content
-                            <% loop $Directors %>
-                            $Name<br/>
-                            $Role<br/>
-                            $Mail<br/>
-                            $Bild
-                            <% end_loop %>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-                                    <h3 class="c-font-bold c-font-uppercase">Mailing-Listen</h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <ul class="c-menu c-arrow-dot1 c-theme">
+                            <div class="row">
                                 <% loop FacebookLinks %>
-                                $Description $FacebookLink
+                                <div class="col-md-3">
+                                    <a href="$FacebookLink.URL" class="btn btn-block btn-social c-btn-square c-btn-uppercase btn-md btn-facebook">
+                                                <i class="fa fa-facebook"></i> $FacebookLink.Title
+                                    </a>
+                                </div>
                                 <% end_loop %>
-                                </ul>
                             </div>
                         </div>
                     </div>

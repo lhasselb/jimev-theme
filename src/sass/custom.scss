@@ -73,3 +73,15 @@ label.error {
     }
 }
 
+.btn.btn-md {
+    padding: 9px 20px 7px 50px;
+}
+.c-btn-uppercase.btn {
+    padding: 7px 20px 5px 50px;
+}
+.c-btn-uppercase.btn-md {
+    padding: 10px 20px 9px 50px;
+}
+.btn + .btn {
+    margin-left: 0px;
+}

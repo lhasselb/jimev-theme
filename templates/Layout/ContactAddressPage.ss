@@ -17,7 +17,32 @@
                         <div class="col-md-9">
                             <h1>$Title</h1>
                             $Content
-                            $Form
+
+                            <div class="row">
+                            <% loop $Directors %>
+                                <div class="col-md-4 col-sm-6 c-margin-b-30">
+                                    <div class="c-content-person-1 c-option-2">
+                                        <div class="c-caption c-content-overlay">
+                                            <div class="c-overlay-wrapper">
+                                                <div class="c-overlay-content">
+                                                    <a href="$Bild.URL" data-lightbox="fancybox" data-fancybox-group="gallery-4">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <img class="c-overlay-object img-responsive" src="$Bild.URL" alt=""> </div>
+                                        <div class="c-body">
+                                            <div class="c-head">
+                                                <div class="c-name c-font-uppercase c-font-bold">$Name</div>
+                                            </div>
+                                            <div class="c-position">$Role</div>
+                                            <p>$Mail</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% end_loop %>
+                            </div>
+
                         </div>
                         <div class="col-md-3">
                             <div class="c-content-ver-nav">
