@@ -17,7 +17,6 @@
                                 </div>
                             </li>
                             <!--END -->
-                            <% if $Odd %><!--BEGIN --><!--END --><% else_if $Even %><!--BEGIN --><!--END --><% end_if %>
                             <% end_loop %>
                         <% end_if %>
                         </ul>
