@@ -14,6 +14,15 @@
                     <!-- END: INLINE NAV -->
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-right">
+                    <% if Alerts %>
+                        <ul class="c-links c-theme-ul">
+                            <li class="c-alert-toggler-wrapper">
+                                <a href="#" class="c-btn-icon c-alert-toggler" data-toggle="modal" data-target="#myModal">
+                                    <i class="fa fa-exclamation-circle c-font-red"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    <% end_if %>
                         <ul class="c-links c-theme-ul">
                             <li>
                                 <a href="kontakt/">Kontakt</a>
@@ -28,17 +37,6 @@
                             </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">
-                            <li class="c-lang dropdown c-last">
-
-                                <ul class="dropdown-menu pull-right" role="menu">
-                                    <li class="active">
-
-                                    </li>
-                                    <li>
-
-                                    </li>
-                                </ul>
-                            </li>
                             <li class="c-search hide">
                                 <!-- BEGIN: QUICK SEARCH -->
                                 <form action="#">

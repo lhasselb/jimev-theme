@@ -1,25 +1,47 @@
+<% if Alerts %>
+    <% loop Alerts %>
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content c-square">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">$Title</h4>
+                    </div>
+                    <div class="modal-body">$Meldung</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn c-theme-btn c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    <% end_loop %>
+<% end_if %>
         <div class="c-layout-page">
             <!-- BEGIN: PAGE CONTENT -->
             <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
             <% include Homepage_Slider %>
             <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
             <!-- BEGIN: CONTENT/MISC/ABOUT-3 -->
-                <div class="c-content-box c-size-md c-bg-white" role="main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 wow animate fadeInLeft">
-                                <!-- Begin: Title 1 component -->
-                                <div class="c-content-title-1">
-                                    <h3 class="c-font-uppercase c-font-bold">$Title</h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <!-- End-->
-                                $Content
-                                $Form
+            <div class="c-content-box c-size-md c-bg-white" role="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 wow animate fadeInLeft">
+                            <!-- Begin: Title 1 component -->
+                            <div class="c-content-title-1">
+                                <h3 class="c-font-uppercase c-font-bold">$Title</h3>
+                                <div class="c-line-left c-theme-bg"></div>
                             </div>
+                            <!-- End-->
+                            $Content
+                            $Form
                         </div>
                     </div>
                 </div>
+            </div>
             <!-- END: CONTENT/MISC/ABOUT-3 -->
             <% if LatestNews %>
             <!-- BEGIN: CONTENT/MISC/RECENT-NEWS -->

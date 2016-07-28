@@ -54,7 +54,6 @@
         <% include Header %>
         <!-- END: HEADER -->
         <!-- END: LAYOUT/HEADERS/HEADER-1 -->
-        <!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
         $Layout
         <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
         <% include Footer %>
@@ -74,4 +73,4 @@
     </body>
 
 </html>
-$RenderDebugBar
+<%--$RenderDebugBar--%>

@@ -160,6 +160,14 @@ var App = function() {
         $('body').on('hidden.bs.modal', '.modal:not(.modal-cached)', function() {
             $(this).removeData('bs.modal');
         });
+
+        /* lh:start */
+        if (Cookies.get('alert') != 1) {
+            $('#myModal').modal('show');
+            /*Valid for one day */
+            Cookies.set('alert', '1', { expires: 1 });
+        }
+        /* lh:end */
     };
 
     // Handles Bootstrap Tooltips.
