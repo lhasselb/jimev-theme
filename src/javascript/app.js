@@ -135,6 +135,51 @@ var App = function() {
 
     // Handles Bootstrap Modals.
     var handleModals = function() {
+        /* lh:start */
+        // add the animation to the popover
+        $('a[rel=popover]').popover().click(function(e) {
+          e.preventDefault();
+          var open = $(this).attr('data-easein');
+          if (open == 'shake') {
+            $(this).next().velocity('callout.' + open);
+          } else if (open == 'pulse') {
+            $(this).next().velocity('callout.' + open);
+          } else if (open == 'tada') {
+            $(this).next().velocity('callout.' + open);
+          } else if (open == 'flash') {
+            $(this).next().velocity('callout.' + open);
+          } else if (open == 'bounce') {
+            $(this).next().velocity('callout.' + open);
+          } else if (open == 'swing') {
+            $(this).next().velocity('callout.' + open);
+          } else {
+            $(this).next().velocity('transition.' + open);
+          }
+
+        });
+        // add the animation to the modal
+        $(".modal").each(function(index) {
+          $(this).on('show.bs.modal', function(e) {
+            var open = $(this).attr('data-easein');
+            if (open == 'shake') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else if (open == 'pulse') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else if (open == 'tada') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else if (open == 'flash') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else if (open == 'bounce') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else if (open == 'swing') {
+              $('.modal-dialog').velocity('callout.' + open);
+            } else {
+              $('.modal-dialog').velocity('transition.' + open);
+            }
+
+          });
+        });
+        /* lh:end */
         // fix stackable modal issue: when 2 or more modals opened, closing one of modal will remove .modal-open class.
         $('body').on('hide.bs.modal', function() {
             if ($('.modal:visible').size() > 1 && $('html').hasClass('modal-open') === false) {
@@ -162,10 +207,48 @@ var App = function() {
         });
 
         /* lh:start */
-        if (Cookies.get('alert') != 1) {
-            $('#myModal').modal('show');
+        var id = $('a.c-alert-toggler').data("target");
+        console.log(id);
+
+        var date = new Date();
+        var rightnow = new Date(date.getFullYear(),date.getMonth(), date.getDate() ,date.getHours(), date.getMinutes());
+        var startyear = $(id).data("startyear");
+        //console.log('startyear ' + startyear);
+        var startmonth = $(id).data("startmonth");
+        //console.log('startmonth ' + startmonth );
+        var startday = $(id).data("startday");
+        //console.log('startday ' + startday);
+        var starthour = $(id).data("starthour");
+        //console.log('starthour ' + starthour);
+        var startminute = $(id).data("startminute");
+        //console.log('startminute ' + startminute);
+        var start = new Date(startyear,startmonth-1,startday,starthour,startminute);
+        console.log('Now ' + rightnow);
+        console.log('Start ' + start);
+        console.log(rightnow >= start);
+        var endyear = $(id).data("endyear");
+        //console.log('endyear ' + endyear);
+        var endmonth = $(id).data("endmonth");
+        //console.log('endmonth ' + endmonth );
+        var endday = $(id).data("endday");
+        //console.log('endday ' + endday);
+        var endhour = $(id).data("endhour");
+        //console.log('endhour ' + endhour);
+        var endminute = $(id).data("endminute");
+        //console.log('endminute ' + endminute);
+        var end = new Date(endyear,endmonth-1,endday,endhour,endminute);
+        console.log('Now ' + rightnow);
+        console.log('End ' + end);
+        console.log(end >= rightnow );
+        var valid =  end >= rightnow && rightnow >= start;
+        console.log(valid);
+
+
+        if (Cookies.get('alert') != id && valid) {
+            $(id).modal('show');
+            $('.modal-dialog').velocity('callout.' + open);
             /*Valid for one day */
-            Cookies.set('alert', '1', { expires: 1 });
+            Cookies.set('alert', id, { expires: 1 });
         }
         /* lh:end */
     };

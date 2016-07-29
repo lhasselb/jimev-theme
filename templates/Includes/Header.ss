@@ -4,23 +4,28 @@
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-left">
                         <ul class="c-icons c-theme-ul">
-                            <li>
-                                <a href="#">
+                            <!--<li>
+                                <a href="https://www.facebook.com/groups/202087889832680/">
                                     <i class="icon-social-facebook"></i>
                                 </a>
+                            </li>-->
+                            <li>
+<a data-original-title="Facebook" data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom" data-content="<a href='https://www.facebook.com/groups/202087889832680/'>Jonglieren in München</a>" data-html="true" aria-describedby="popoverFacebook"><i class="icon-social-facebook"></i></a>
                             </li>
                         </ul>
                     </nav>
                     <!-- END: INLINE NAV -->
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-right">
-                    <% if Alerts %>
+                    <% if Alert %>
                         <ul class="c-links c-theme-ul">
+                            <% loop Alert %>
                             <li class="c-alert-toggler-wrapper">
-                                <a href="#" class="c-btn-icon c-alert-toggler" data-toggle="modal" data-target="#myModal">
+                                <a href="#" class="c-btn-icon c-alert-toggler" data-toggle="modal" data-target="#Modal-$ID">
                                     <i class="fa fa-exclamation-circle c-font-red"></i>
                                 </a>
                             </li>
+                            <% end_loop %>
                         </ul>
                     <% end_if %>
                         <ul class="c-links c-theme-ul">
@@ -39,10 +44,10 @@
                         <ul class="c-ext c-theme-ul">
                             <li class="c-search hide">
                                 <!-- BEGIN: QUICK SEARCH -->
-                                <form action="#">
+                                <!--<form action="#">
                                     <input type="text" name="query" placeholder="suche..." value="" class="form-control" autocomplete="off">
                                     <i class="fa fa-search"></i>
-                                </form>
+                                </form>-->
                                 <!-- END: QUICK SEARCH -->
                             </li>
                         </ul>

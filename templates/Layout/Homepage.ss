@@ -1,6 +1,17 @@
-<% if Alerts %>
-    <% loop Alerts %>
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<% if Alert %>
+    <% loop Alert %>
+        <div id="Modal-$ID" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel$ID" aria-hidden="true"data-startyear="$StartYear"
+        data-startmonth="$StartMonth"
+        data-startday="$StartDay"
+        data-startHour="$StartHour"
+        data-startminute="$StartMinute"
+        data-endyear="$EndYear"
+        data-endmonth="$EndMonth"
+        data-endday="$EndDay"
+        data-endhour="$EndHour"
+        data-endminute="$EndMinute"
+
+         data-easein="expandIn">
             <div class="modal-dialog">
                 <div class="modal-content c-square">
                     <div class="modal-header">
