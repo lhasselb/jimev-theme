@@ -4,13 +4,8 @@
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-left">
                         <ul class="c-icons c-theme-ul">
-                            <!--<li>
-                                <a href="https://www.facebook.com/groups/202087889832680/">
-                                    <i class="icon-social-facebook"></i>
-                                </a>
-                            </li>-->
                             <li>
-<a data-original-title="Facebook" data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom" data-content="<a href='https://www.facebook.com/groups/202087889832680/'>Jonglieren in München</a>" data-html="true" aria-describedby="popoverFacebook"><i class="icon-social-facebook"></i></a>
+<a data-original-title="Facebook-Gruppe" data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom" data-content="<a href='https://www.facebook.com/groups/202087889832680/'>Jonglieren in München</a>" data-html="true" aria-describedby="popoverFacebook"><i class="icon-social-facebook"></i></a>
                             </li>
                         </ul>
                     </nav>
@@ -18,10 +13,10 @@
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-right">
                     <% if Alert %>
-                        <ul class="c-links c-theme-ul">
+                        <ul class="c-links c-theme-ul jimAlarm">
                             <% loop Alert %>
                             <li class="c-alert-toggler-wrapper">
-                                <a href="#" class="c-btn-icon c-alert-toggler" data-toggle="modal" data-target="#Modal-$ID">
+                                <a title="$Title" href="#" class="c-btn-icon c-alert-toggler tooltips bottom" data-toggle="modal" data-target="#Modal-$ID" data-toggle="tooltip" data-placement="bottom">
                                     <i class="fa fa-exclamation-circle c-font-red"></i>
                                 </a>
                             </li>

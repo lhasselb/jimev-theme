@@ -79,3 +79,36 @@ label.error {
 .c-btn-uppercase.btn-md {padding: 10px 20px 9px 50px;}
 .btn + .btn {margin-left: 0px;}
 */
+/*
+ul.jimAlarm {
+    display:none;
+}
+*/
+
+
+
+img.left {
+    float: left;
+    /*padding: 1em 1em 1em 0;*/
+}
+
+img.right {
+    float: right;
+    /*padding: 1em 0 1em 1em;*/
+}
+
+img.center {
+    display : block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+img.leftAlone {
+    float: left;
+    margin-right: 100%;
+}
+
+img.rightAlone {
+    float: right;
+    margin-left: 100%;
+}

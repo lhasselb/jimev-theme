@@ -208,48 +208,44 @@ var App = function() {
 
         /* lh:start */
         var id = $('a.c-alert-toggler').data("target");
-        console.log(id);
-
-        var date = new Date();
-        var rightnow = new Date(date.getFullYear(),date.getMonth(), date.getDate() ,date.getHours(), date.getMinutes());
+        var rightnow = function(){
+            var date = new Date();
+            return new Date(date.getFullYear(),date.getMonth(), date.getDate() ,date.getHours(), date.getMinutes());
+        };
         var startyear = $(id).data("startyear");
-        //console.log('startyear ' + startyear);
         var startmonth = $(id).data("startmonth");
-        //console.log('startmonth ' + startmonth );
         var startday = $(id).data("startday");
-        //console.log('startday ' + startday);
         var starthour = $(id).data("starthour");
-        //console.log('starthour ' + starthour);
         var startminute = $(id).data("startminute");
-        //console.log('startminute ' + startminute);
         var start = new Date(startyear,startmonth-1,startday,starthour,startminute);
-        console.log('Now ' + rightnow);
-        console.log('Start ' + start);
-        console.log(rightnow >= start);
         var endyear = $(id).data("endyear");
-        //console.log('endyear ' + endyear);
         var endmonth = $(id).data("endmonth");
-        //console.log('endmonth ' + endmonth );
         var endday = $(id).data("endday");
-        //console.log('endday ' + endday);
         var endhour = $(id).data("endhour");
-        //console.log('endhour ' + endhour);
         var endminute = $(id).data("endminute");
-        //console.log('endminute ' + endminute);
         var end = new Date(endyear,endmonth-1,endday,endhour,endminute);
-        console.log('Now ' + rightnow);
-        console.log('End ' + end);
-        console.log(end >= rightnow );
-        var valid =  end >= rightnow && rightnow >= start;
-        console.log(valid);
-
-
-        if (Cookies.get('alert') != id && valid) {
+        var valid =  function() {
+            return end >= rightnow() && rightnow() >= start;
+        };
+        //console.log(rightnow());
+        //console.log(start);
+        //console.log(end);
+        if(!valid()) $('ul.jimAlarm').hide();
+        if (Cookies.get('alert') != id && valid()) {
             $(id).modal('show');
-            $('.modal-dialog').velocity('callout.' + open);
-            /*Valid for one day */
             Cookies.set('alert', id, { expires: 1 });
         }
+        var checkHeader = setInterval(function() {
+            //console.log('Message is ' + valid() + ' at ' + rightnow());
+            //if(!valid()) $('ul.jimAlarm').hide();
+            if(valid()) {
+                $('ul.jimAlarm').show();
+            }
+            if(Cookies.get('shown') !=1 && Cookies.get('alert') != id) {
+                $(id).modal('show');
+                Cookies.set('shown', 1, { expires: 1 });
+            }
+        }, 6 * 1000);
         /* lh:end */
     };
 

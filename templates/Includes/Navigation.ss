@@ -31,7 +31,7 @@
             <% if $Children %>
             <ul class="dropdown-menu c-pull-right">
                 <% loop $Children %>
-                <li class="$LinkingMode">
+                <li <% if $Children %>class="dropdown-submenu"<% end_if %>>
                     <a href="$Link" title="$Title.XML">$MenuTitle.XML
                     <span class="c-arrow c-toggler"></span>
                     </a>

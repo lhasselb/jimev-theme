@@ -19,6 +19,7 @@
                             <div class="typography">
                             $Content
                             </div>
+                            <% include Gallery %>
                         </div>
                         <div class="col-md-3">
                             <div class="c-content-ver-nav">
