@@ -7,12 +7,6 @@
     cursor: pointer;
 }
 
-.typography .first-letter {
-    color: #903;
-    font-size: 40px;
-    line-height: 40px;
-}
-
 .typography p {
     color: #5c6873;
     font-family: "Roboto Condensed", sans-serif;
@@ -20,4 +14,16 @@
     font-size: 17px;
 }
 
+/* Color Next Generation Convention */
+.typography .first-letter {
+    color: #903;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+/* GoogleCalendarPage */
+.typography li.Jongliertreffen {color: #0D7813;font-weight: bold;}
+.typography li.Jongliertreffen-faellt-leider-aus {color: #A32929;font-weight: bold;}
+.typography li.Jonglier-Events-und-Veranstaltungen {color: #E0C240;font-weight: bold;}
+.typography li.Workshops {color: #060D5E;font-weight: bold;}
 

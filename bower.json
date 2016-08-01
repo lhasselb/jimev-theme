@@ -27,7 +27,7 @@
     "modernizr": "~2.7.1",
     "bootstrap-sass": "~3.3.6",
     "font-awesome": "~4.5.0",
-    "fullcalendar": "^2.7.2",
+    "fullcalendar": "^2.9.1",
     "eonasdan-bootstrap-datetimepicker": "^4.17.37",
     "velocity": "^1.2.3",
     "moment": "^2.14.1",

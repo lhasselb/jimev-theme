@@ -230,7 +230,10 @@ var App = function() {
         //console.log(rightnow());
         //console.log(start);
         //console.log(end);
-        if(!valid()) $('ul.jimAlarm').hide();
+        if(!valid()) {
+            $('ul.jimAlarm').hide();
+        } else $('ul.jimAlarm').show();
+
         if (Cookies.get('alert') != id && valid()) {
             $(id).modal('show');
             Cookies.set('alert', id, { expires: 1 });
@@ -241,18 +244,18 @@ var App = function() {
             if(valid()) {
                 $('ul.jimAlarm').show();
             }
-            if(Cookies.get('shown') !=1 && Cookies.get('alert') != id) {
+            if(valid() && Cookies.get('shown') !=1 && Cookies.get('alert') != id) {
                 $(id).modal('show');
                 Cookies.set('shown', 1, { expires: 1 });
             }
-        }, 6 * 1000);
+        }, 60 * 1000);
         /* lh:end */
     };
 
     // Handles Bootstrap Tooltips.
     var handleTooltips = function() {
         // global tooltips
-        $('.tooltips').tooltip();
+        $('.tooltips').tooltip({trigger: 'hover'});
     };
 
     // Handles Bootstrap Dropdowns

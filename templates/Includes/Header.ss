@@ -13,10 +13,10 @@
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-right">
                     <% if Alert %>
-                        <ul class="c-links c-theme-ul jimAlarm">
+                        <ul class="c-links c-theme-ul jimAlarm" style="display:none;">
                             <% loop Alert %>
                             <li class="c-alert-toggler-wrapper">
-                                <a title="$Title" href="#" class="c-btn-icon c-alert-toggler tooltips bottom" data-toggle="modal" data-target="#Modal-$ID" data-toggle="tooltip" data-placement="bottom">
+                                <a title="$Title" href="#" class="c-btn-icon c-alert-toggler tooltips bottom" data-toggle="modal" data-target="#Modal-$ID" data-toggle="tooltip" data-placement="bottom" "#" data-original-t="$Title">
                                     <i class="fa fa-exclamation-circle c-font-red"></i>
                                 </a>
                             </li>

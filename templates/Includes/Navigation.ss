@@ -28,7 +28,7 @@
                 <span class="c-arrow c-toggler"></span>
                 </a>
             <!-- 3rd level start -->
-            <% if $Children %>
+            <%-- if $Children %>
             <ul class="dropdown-menu c-pull-right">
                 <% loop $Children %>
                 <li <% if $Children %>class="dropdown-submenu"<% end_if %>>
@@ -38,7 +38,7 @@
                 </li>
                 <% end_loop %>
             </ul>
-            <% end_if %>
+            <% end_if --%>
             <!-- 3rd level end -->
         </li>
         <% end_loop %>
