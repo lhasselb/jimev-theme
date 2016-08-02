@@ -227,9 +227,8 @@ var App = function() {
         var valid =  function() {
             return end >= rightnow() && rightnow() >= start;
         };
-        //console.log(rightnow());
-        //console.log(start);
-        //console.log(end);
+        //console.log(Message is ' + valid() + ' at ' + rightnow());
+        //console.log('Start ' + start + ' End ' + end);
         if(!valid()) {
             $('ul.jimAlarm').hide();
         } else $('ul.jimAlarm').show();
@@ -240,7 +239,6 @@ var App = function() {
         }
         var checkHeader = setInterval(function() {
             //console.log('Message is ' + valid() + ' at ' + rightnow());
-            //if(!valid()) $('ul.jimAlarm').hide();
             if(valid()) {
                 $('ul.jimAlarm').show();
             }

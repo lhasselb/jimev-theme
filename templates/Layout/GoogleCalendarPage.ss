@@ -14,9 +14,11 @@
             <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="typography">$Content</div>
+                        <div class="col-md-9">
                             <% include Calendar %>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="typography">$Content</div>
                         </div>
                     </div>
                 </div>
