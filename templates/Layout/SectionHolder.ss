@@ -11,18 +11,36 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-                <div class="c-content-box c-size-md c-bg-white" role="main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold">$Title</h3>
-                                <div class="typography c-desc">
-                                    $Content
+            <div class="c-content-box c-size-md c-bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h1>$Title</h1>
+                            <div class="typography">$Content</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="c-content-ver-nav">
+                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                    <h3 class="c-font-bold c-font-uppercase">
+                                    <% if Parent %>$Parent.Title<% else %>$Title<% end_if %>
+
+                                    </h3>
+                                    <div class="c-line-left c-theme-bg"></div>
                                 </div>
+                                <ul class="c-menu c-arrow-dot1 c-theme">
+                                <% loop $Menu(2) %>
+                                <% if LinkOrCurrent != current %>
+                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% else %>
+                                    <li>$MenuTitle.XML</li>
+                                <% end_if %>
+                                <% end_loop %>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <!-- END: PAGE CONTENT -->
         </div>
         <!-- END: PAGE CONTAINER -->

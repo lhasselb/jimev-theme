@@ -22,8 +22,20 @@
 }
 
 /* GoogleCalendarPage */
-.typography li.Jongliertreffen {color: #0D7813;font-weight: bold;}
-.typography li.Jongliertreffen-faellt-leider-aus {color: #A32929;font-weight: bold;}
-.typography li.Jonglier-Events-und-Veranstaltungen {color: #E0C240;font-weight: bold;}
-.typography li.Workshops {color: #060D5E;font-weight: bold;}
+.typography li.Jongliertreffen {color: #0D7813;}
+.typography li.Jongliertreffen-faellt-leider-aus {color: #A32929;}
+.typography li.Jonglier-Events-und-Veranstaltungen {color: #E0C240;}
+.typography li.Workshops {color: #060D5E;}
+.typography li.Jongliertreffen,.typography li.Jongliertreffen-faellt-leider-aus,.typography li.Jonglier-Events-und-Veranstaltungen,
+.typography li.Workshops {font-weight: 500 !important;}
 
+.typography p.Alarm {
+    color:red;
+    font-weight: 500 !important;
+}
+
+.typography p.Alarm:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f0a9";
+}

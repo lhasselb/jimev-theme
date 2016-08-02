@@ -12,7 +12,7 @@
                                 </button>
                                 <h4 class="modal-title" id="myModalLabel">$Title</h4>
                             </div>
-                            <div class="modal-body">$Meldung</div>
+                            <div class="modal-body typography">$Meldung</div>
                             <div class="modal-footer">
                                 <button type="button" class="btn c-theme-btn c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-dismiss="modal">Schließen</button>
                             </div>

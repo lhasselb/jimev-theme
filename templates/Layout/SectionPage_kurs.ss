@@ -11,7 +11,6 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <!-- BEGIN: BLOG LISTING -->
             <div class="c-content-box c-size-md">
                 <div class="container">
                     <div class="row">
@@ -33,19 +32,22 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="#">$CourseTitle</a>
                                     </div>
+                                    <!--
                                     <div class="c-panel c-margin-b-30">
-                                        <div class="c-date">am
-                                            <span class="c-font-uppercase">$CourseDateStart.Formati18N('%d.%m.%Y')</span>
+                                        <div class="c-date">
+                                            <span class="c-font-uppercase">$CourseDateStart.Formati18N('%A, %d.%m.%Y')</span>
+                                            <span class="c-font-uppercase">$CourseDateEnd.Formati18N('%A, %d.%m.%Y')</span>
                                         </div>
-                                        <% if Sections %>
+                                        <%-- if Sections %>
                                         <ul class="c-tags c-theme-ul-bg">
                                             <% loop Sections %>
                                             <li>$Title</li>
                                             <% end_loop %>
                                         </ul>
-                                        <% end_if %>
+                                        <% end_if --%>
                                     </div>
-                                    <div class="c-desc">
+                                    -->
+                                    <div class="typography c-desc">
                                         $Content
                                     </div>
                             <% end_with %>
@@ -70,7 +72,6 @@
                     </div>
                 </div>
             </div>
-            <!-- END: BLOG LISTING  -->
             <!-- END: PAGE CONTENT -->
 </div>
 <!-- END: PAGE CONTAINER -->

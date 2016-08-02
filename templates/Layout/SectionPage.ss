@@ -36,9 +36,11 @@
                                         $Content
                                     </div>
                                     <div class="c-panel">
+                                        <% if CourseDateStart %>
                                         <div class="c-date">am
                                             <span class="c-font-uppercase">$CourseDateStart.Formati18N('%d.%m.%Y')</span>
                                         </div>
+                                        <% end_if %>
                                         <% if Sections %>
                                         <ul class="c-tags c-theme-ul-bg">
                                             <% loop Sections %>

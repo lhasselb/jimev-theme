@@ -4,7 +4,7 @@
 		<% if Last %>
         <li class="c-state_active">$Title.XML</li>
         <% else %>
-        <li><a href="$Link" title="$MenuTitle.XML">$MenuTitle.XML</a></li>
+        <li><a href="$Link" title="$Title.XML">$Title.XML</a></li>
         <li>/</li>
         <% end_if %>
 	<% end_loop %>
