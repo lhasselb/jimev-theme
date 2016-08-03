@@ -48,9 +48,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="c-content-feature-9">
+                            <div class="c-content-feature-9 typography">
                                 <p>$LocationDescription</p>
-                                <% if $Map.exists()%><div>$Map</div><% else %>$BasicMap<% end_if %>
+                                <% if $Map.exists()%><div>$Map.RAW()</div><% end_if %>
                             </div>
                         </div>
                         <div class="col-md-3">
