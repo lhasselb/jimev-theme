@@ -18,7 +18,7 @@
                             <h1>$Title</h1>
                             <div class="typography">$Content</div>
                             <div class="c-content-feature-9">
-                                <ul class="c-list">
+                                <ul class="c-list schedule">
                                     <li class="wow animate fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                                         <div class="c-card">
                                             <i class="icon-clock c-font-blue-1-5 c-font-22 c-bg-white c-float-left"></i>
@@ -49,8 +49,10 @@
                                 </ul>
                             </div>
                             <div class="c-content-feature-9 typography">
-                                <p>$LocationDescription</p>
-                                <% if $Map.exists()%><div>$Map.RAW()</div><% end_if %>
+                                $LocationDescription
+                                <% if $Map.exists()%>
+                                <div class="map-container">$Map.RAW()</div>
+                                <% end_if %>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -58,7 +60,6 @@
                                 <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
                                     <h3 class="c-font-bold c-font-uppercase">
                                     <% if Parent %>$Parent.Title<% else %>$Title<% end_if %>
-
                                     </h3>
                                     <div class="c-line-left c-theme-bg"></div>
                                 </div>

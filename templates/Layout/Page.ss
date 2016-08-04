@@ -23,7 +23,6 @@
                                 <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
                                     <h3 class="c-font-bold c-font-uppercase">
                                     <% if Parent %>$Parent.Title<% else %>$Title<% end_if %>
-
                                     </h3>
                                     <div class="c-line-left c-theme-bg"></div>
                                 </div>

@@ -22,7 +22,7 @@
                                 <div class="c-body">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <table class="table table-hover">
+                                            <table class="table table-striped">
                                                 <thead><tr><th>Zeit</th><th>Ort</th><th>Bemerkung</th></tr></thead>
                                                 <tbody>
                                                 <% loop $Children %>
@@ -40,7 +40,6 @@
                                 <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
                                     <h3 class="c-font-bold c-font-uppercase">
                                     <% if Parent %>$Parent.Title<% else %>$Title<% end_if %>
-
                                     </h3>
                                     <div class="c-line-left c-theme-bg"></div>
                                 </div>

@@ -1,53 +1,10 @@
 /* Add styling for selected links (missing a href) for home icon */
 .c-active span.c-link.dropdown-toggle {
-                        line-height: 20px;
-                        position: relative;
-                        display: block;
+    line-height: 20px;
+    position: relative;
+    display: block;
 }
-
-/* Style logo height and font-size for icon */
-/*
-.c-layout-header.c-layout-header-6 {
-    .c-topbar {
-        .c-brand {
-            .c-layout-quick-search-shown & {
-            }
-            > .c-logo {
-                &:after {
-                    height: 55px;
-                }
-            }
-            > .c-icons {
-                > li {
-                    > a {
-                        font-size: 24px;
-
-                        > i {
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-*/
-/*
-#container .view-cap, #container .view-container-border { background-color:#32c5d2;; }
-#container .mv-daynames-table { color:white; background:black; }
-#container .mv-event-container { border-top:1px solid black; }
-*/
-/*#container .st-bg { background:black; }
-#container .st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }
-#container .st-dtitle { background:white; }*/
-/*
-#container .view-cap, #container .view-container-border { background-color:#5c6873; }
-#container .mv-daynames-table { color:white; background:#5c6873; }
-#container .mv-event-container { border-top:1px solid #5c6873; }
-//#container .st-bg { border-left:none; }
-#container .st-dtitle { border:none; background:white; }
-*/
-
+/* Navifation */
 nav.c-top-menu.c-pull-right .c-links.c-theme-ul {
     position: relative;
     top: 8px;
@@ -61,53 +18,43 @@ label.error {
     display: inline;
 }
 
-
 @media (min-width: 992px) {
     .c-layout-header .c-brand {
         margin: 16px 0 18px 0;
     }
-
     .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
         transition: margin 0.2s;
         margin: 4px 0 1px 0;
     }
 }
 
-/*
-.btn.btn-md {padding: 9px 20px 7px 50px;}
-.c-btn-uppercase.btn {padding: 7px 20px 5px 50px;}
-.c-btn-uppercase.btn-md {padding: 10px 20px 9px 50px;}
-.btn + .btn {margin-left: 0px;}
-*/
-/*
-ul.jimAlarm {
-    display:none;
-}
-*/
 
 /* Implement the existend classes for SS TinyMCE */
-img.left {
-    float: left;
-    /*padding: 1em 1em 1em 0;*/
-}
+img.left {float: left;}
+img.right {float: right;}
+img.center {display : block;margin: 0 auto 0 auto;text-align: center;}
+img.leftAlone {float: left;margin-right: 100%;}
+img.rightAlone {float: right;margin-left: 100%;}
 
-img.right {
-    float: right;
-    /*padding: 1em 0 1em 1em;*/
+/* Google Maps */
+.map-container {width: 100%;}
+.map-container iframe {
+    display: block;
+    width: 100%;
+    position: relative; /* IE needs a position other than static */
+    pointer-events: none;
 }
+.map-container iframe.clicked{pointer-events: auto;}
 
-img.center {
-    display : block;
-    margin: 0 auto 0 auto;
-    text-align: center;
+/* Jongliertreffen */
+.c-content-feature-9 > .c-list.schedule > li > .c-card {
+    padding: 0px;
+    margin-right: 2px;
+    position: relative;
 }
-
-img.leftAlone {
-    float: left;
-    margin-right: 100%;
+.c-content-feature-9 > .c-list.schedule > li > .c-card > .c-content-left {
+    padding-left: 60px;
 }
-
-img.rightAlone {
-    float: right;
-    margin-left: 100%;
+.c-content-feature-9 > .c-list.schedule > li > .c-card > i {
+    padding: 0 14px 14px;
 }

@@ -14,16 +14,15 @@
             <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                             <h1>$Title</h1>
-                            $Content
-                            <div class="row">
+                            <div class="typography">$Content</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="typography facebook">
                                 <% loop FacebookLinks %>
-                                <div class="col-md-3">
-                                    <a href="$FacebookLink.URL" class="btn btn-block btn-social c-btn-square c-btn-uppercase btn-md btn-facebook">
-                                                <i class="fa fa-facebook"></i> $FacebookLink.Title
-                                    </a>
-                                </div>
+                                <a href="$FacebookLink.URL" class="btn btn-block btn-social c-btn-square c-btn-uppercase btn-md btn-facebook"><i class="fa fa-facebook"></i> $FacebookLink.Title
+                                </a>
                                 <% end_loop %>
                             </div>
                         </div>

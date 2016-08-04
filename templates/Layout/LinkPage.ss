@@ -11,42 +11,43 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <div class="typograhy c-content-box c-size-md c-bg-white">
+            <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
-                    <div class="c-content-title-1">
-                        <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
-                        <div class="c-line-center c-theme-bg"></div>
-                        <p class="c-center">$Content</p>
-                    </div>
-                    <% loop Linkset %>
-                    <div class="c-content-panel">
-                        <div class="c-label">$Title</div>
-                        <div class="c-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <table class="table table-hover">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="c-content-title-1">
+                                <h3 class="c-center c-font-uppercase c-font-bold">$Title</h3>
+                            </div>
+                            <div class="c-line-center c-theme-bg"></div>
+                            <div class="typography">
+                            $Content
+                            <% loop Linkset %>
+                            <div class="c-content-panel">
+                                <div class="c-label">$Title</div>
+                                <div class="c-body">
+                                    <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Link</th>
-                                                <th>Beschreibung</th>
+                                                <th>Link</th><th>Beschreibung</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                    <% loop Links %>
+                                        <% loop Links %>
                                             <tr>
-                                                <td>$FriendlyLink</td>
-                                                <td>$Description</td>
+                                                <td>$FriendlyLink</td><td>$Description</td>
                                             </tr>
-                                    <% end_loop %>
+                                        <% end_loop %>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <% end_loop %>
+                            </div>
                         </div>
                     </div>
-                    <% end_loop %>
                 </div>
             </div>
             <!-- END: PAGE CONTENT -->
         </div>
         <!-- END: PAGE CONTAINER -->
+
