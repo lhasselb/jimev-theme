@@ -32,23 +32,7 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
-                                    <div class="typography c-desc">
-                                        $Content
-                                    </div>
-                                    <div class="c-panel">
-                                        <% if CourseDateStart %>
-                                        <div class="c-date">am
-                                            <span class="c-font-uppercase">$CourseDateStart.Formati18N('%d.%m.%Y')</span>
-                                        </div>
-                                        <% end_if %>
-                                        <% if Sections %>
-                                        <ul class="c-tags c-theme-ul-bg">
-                                            <% loop Sections %>
-                                            <li>$Title</li>
-                                            <% end_loop %>
-                                        </ul>
-                                        <% end_if %>
-                                    </div>
+                                    <div class="typography c-desc">$Content</div>
                                 </div>
                                 <% end_loop %>
                                 <% include CoursePagination %>

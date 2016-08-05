@@ -29,18 +29,26 @@
                                         </div>
                                     </div>
                                     <% end_if %>
-                                    <div class="c-title c-font-bold c-font-uppercase">
-                                        <a href="#">$CourseTitle</a>
-                                    </div>
-                                    <div class="typography c-desc">
-                                        $Content
-                                    </div>
+                                    <div class="c-title c-font-bold c-font-uppercase">$CourseTitle</div>
+                                    <div class="typography c-desc">$Content</div>
                             <% end_with %>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                        <% include SideBar %>
+                            <div class="c-content-ver-nav">
+                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                    <h3 class="c-font-bold c-font-uppercase">
+                                    <% if Parent %>$Parent.MenuTitle<% else %>$MenuTitle<% end_if %>
+                                    </h3>
+                                    <div class="c-line-left c-theme-bg"></div>
+                                </div>
+                                <ul class="c-menu c-arrow-dot1 c-theme">
+                                <% loop $Menu(2) %>
+                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% end_loop %>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
