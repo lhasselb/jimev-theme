@@ -4,30 +4,21 @@
     position: relative;
     display: block;
 }
-/* Navifation */
+/* Navigation */
 nav.c-top-menu.c-pull-right .c-links.c-theme-ul {
     position: relative;
     top: 8px;
 }
 
-label.error {
-    color :red;
-}
-
-.c-linkfooter li {
-    display: inline;
-}
-
+label.error {color :red;}
+.c-linkfooter li {display: inline;}
 @media (min-width: 992px) {
-    .c-layout-header .c-brand {
-        margin: 16px 0 18px 0;
-    }
+    .c-layout-header .c-brand {margin: 16px 0 18px 0;}
     .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
         transition: margin 0.2s;
         margin: 4px 0 1px 0;
     }
 }
-
 
 /* Implement the existend classes for SS TinyMCE */
 img.left {float: left;}
@@ -57,4 +48,32 @@ img.rightAlone {float: right;margin-left: 100%;}
 }
 .c-content-feature-9 > .c-list.schedule > li > .c-card > i {
     padding: 0 14px 14px;
+}
+
+/* Alarm */
+.alarm p {
+    color:red;
+    font-weight: 500 !important;
+}
+.alarm p:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f0a9";
+}
+
+/* Kontakt */
+div.facebook a,div.facebook a:hover {
+    color: #fff;
+}
+div.facebook a.c-btn-uppercase.btn-md {
+    padding: 10px 20px 9px 50px;
+}
+.facebook a.btn + .btn {
+    margin-left: 0px;
+}
+
+/* Sidebar 2nd level  */
+.active {
+    color: #57bfe1;
+    font-weight: 500;
 }

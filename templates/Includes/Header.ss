@@ -3,15 +3,13 @@
                 <div class="container">
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-left">
-<!--
-Jonglieren in München https://www.facebook.com/groups/202087889832680/
-Akrobatik:https://www.facebook.com/groups/130714529242/
-Vertikaltuch: https://www.facebook.com/groups/aerialsilk.munich/
-Feuer: https://www.facebook.com/groups/258433057533210/
--->
+                    <!-- Jonglieren in München https://www.facebook.com/groups/202087889832680/ | Akrobatik:https://www.facebook.com/groups/130714529242/ | Vertikaltuch: https://www.facebook.com/groups/aerialsilk.munich/ | Feuer: https://www.facebook.com/groups/258433057533210/ -->
                         <ul class="c-icons c-theme-ul">
                             <li>
-<a data-original-title="Facebook-Gruppen" data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom" data-content="<a href='https://www.facebook.com/groups/202087889832680/'>Jonglieren in München</a><br/><a href='https://www.facebook.com/groups/202087889832680/'>Akrobatik</a><br/><a href='https://www.facebook.com/groups/202087889832680/'>Vertikaltuch</a><br/><a href='https://www.facebook.com/groups/202087889832680/'>Feuer</a>" data-html="true" aria-describedby="popoverFacebook"><i class="icon-social-facebook"></i></a>
+                                <a data-original-title="Facebook-Gruppen"
+                                data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom"
+                                data-content="<% loop FacebookLinks %><% if Last %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><% else %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><br/><% end_if %><% end_loop %>"
+                                data-html="true" aria-describedby="popoverFacebook"><i class="icon-social-facebook"></i></a>
                             </li>
                         </ul>
                     </nav>
@@ -31,15 +29,15 @@ Feuer: https://www.facebook.com/groups/258433057533210/
                     <% end_if %>
                         <ul class="c-links c-theme-ul">
                             <li>
-                                <a href="kontakt/">Kontakt</a>
+                                <a href="kontakt/" class="jimevLink">Kontakt</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="links/">Links</a>
+                                <a href="links/" class="jimevLink">Links</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="faq/">FAQ</a>
+                                <a href="faq/" class="jimevLink">FAQ</a>
                             </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">

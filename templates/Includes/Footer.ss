@@ -8,7 +8,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <ul class="c-links c-theme-ul">
                                     <li>
-                                        <a href="#">Impressum</a>
+                                        <a href="impressum/">Impressum</a>
                                     </li>
                                     <li class="c-divider">|</li>
                                     <li>

@@ -19,7 +19,7 @@
                             <div class="typography">$Content</div>
                         </div>
                         <div class="col-md-3">
-                            <div class="typography facebook">
+                            <div class="facebook">
                                 <% loop FacebookLinks %>
                                 <a href="$FacebookLink.URL" class="btn btn-block btn-social c-btn-square c-btn-uppercase btn-md btn-facebook"><i class="fa fa-facebook"></i> $FacebookLink.Title
                                 </a>

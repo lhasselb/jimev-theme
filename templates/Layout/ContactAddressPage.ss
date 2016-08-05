@@ -16,50 +16,49 @@
                     <div class="row">
                         <div class="col-md-9">
                             <h1>$Title</h1>
-                            $Content
-
+                            <div class="typography">$Content</div>
                             <div class="row">
-                            <% loop $Directors %>
-                                <div class="col-md-4 col-sm-6 c-margin-b-30">
-                                    <div class="c-content-person-1 c-option-2">
-                                        <div class="c-caption c-content-overlay">
-                                            <div class="c-overlay-wrapper">
-                                                <div class="c-overlay-content">
-                                                    <a href="$Bild.URL" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                                        <i class="icon-magnifier"></i>
-                                                    </a>
+                                <div class="c-content-person-1-slider" data-slider="owl" data-items="3" data-auto-play="8000">
+                                    <!-- Begin: Title 1 component -->
+                                    <div class="c-content-title-1">
+                                        <h2 class="c-center c-font-uppercase c-font-bold">$ManagementTitle</h2>
+                                        <div class="c-line-center c-theme-bg"></div>
+                                    </div>
+                                    <!-- End-->
+                                    <!-- Begin: Owlcarousel -->
+                                    <div class="owl-carousel owl-theme c-theme">
+                                        <% loop $Directors %>
+                                        <div class="item">
+                                            <div class="c-content-person-1">
+                                                <div class="c-caption c-content-overlay">
+                                                    <div class="c-overlay-wrapper">
+                                                        <div class="c-overlay-content">
+                                                            <a href="#">
+                                                                <i class="icon-link"></i>
+                                                            </a>
+                                                            <a href="$Bild.URL" data-lightbox="fancybox" data-fancybox-group="gallery-1">
+                                                                <i class="icon-magnifier"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img src="$Bild.URL" class="img-responsive c-overlay-object" alt=""> </div>
+                                                <div class="c-body">
+                                                    <div class="c-head">
+                                                        <div class="c-name c-font-uppercase c-font-bold">$Name</div>
+                                                    </div>
+                                                    <div class="c-position">$Role</div>
+
                                                 </div>
                                             </div>
-                                            <img class="c-overlay-object img-responsive" src="$Bild.URL" alt=""> </div>
-                                        <div class="c-body">
-                                            <div class="c-head">
-                                                <div class="c-name c-font-uppercase c-font-bold">$Name</div>
-                                            </div>
-                                            <div class="c-position">$Role</div>
-                                            <p>$Mail</p>
                                         </div>
+                                        <% end_loop %>
                                     </div>
+                                    <!-- End-->
                                 </div>
-                            <% end_loop %>
                             </div>
-
                         </div>
                         <div class="col-md-3">
-                            <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-                                    <h3 class="c-font-bold c-font-uppercase">$Parent.Title</h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <ul class="c-menu c-arrow-dot1 c-theme">
-                                <% loop $Menu(2) %>
-                                <% if LinkOrCurrent != current %>
-                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
-                                <% else %>
-                                    <li>$MenuTitle.XML</li>
-                                <% end_if %>
-                                <% end_loop %>
-                                </ul>
-                            </div>
+                        <% include SideBar %>
                         </div>
                     </div>
                 </div>

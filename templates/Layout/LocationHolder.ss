@@ -36,23 +36,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-                                    <h3 class="c-font-bold c-font-uppercase">
-                                    <% if Parent %>$Parent.Title<% else %>$Title<% end_if %>
-                                    </h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <ul class="c-menu c-arrow-dot1 c-theme">
-                                <% loop $Menu(2) %>
-                                <% if LinkOrCurrent != current %>
-                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
-                                <% else %>
-                                    <li>$MenuTitle.XML</li>
-                                <% end_if %>
-                                <% end_loop %>
-                                </ul>
-                            </div>
+                        <% include SideBar %>
                         </div>
                     </div>
                 </div>

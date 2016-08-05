@@ -4,7 +4,8 @@
 }
 
 .typography a:hover {
-    color: #5c6873;
+    color: #fff;/*#5c6873;*/
+    background-color: #57bfe1;
     cursor: pointer;
 }
 
@@ -30,24 +31,12 @@
 .typography li.Jongliertreffen,.typography li.Jongliertreffen-faellt-leider-aus,.typography li.Jonglier-Events-und-Veranstaltungen,
 .typography li.Workshops {font-weight: 500 !important;}
 
-.typography p.Alarm, .rot {
+.typography .rot {
     color:red;
     font-weight: 500 !important;
 }
 
-.typography p.Alarm:before {
-    font-family: FontAwesome;
-    margin-right: 10px;
-    content: "\f0a9";
-}
-
-.typography a.btn + .btn {
-    margin-left: 0px;
-}
-
-div.facebook a,div.facebook a:hover {
-    color: #fff;
-}
-div.facebook a.c-btn-uppercase.btn-md {
-    padding: 10px 20px 9px 50px;
+.typography img {
+    max-width: 100%;
+    height: auto;
 }

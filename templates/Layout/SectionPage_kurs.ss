@@ -32,21 +32,6 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="#">$CourseTitle</a>
                                     </div>
-                                    <!--
-                                    <div class="c-panel c-margin-b-30">
-                                        <div class="c-date">
-                                            <span class="c-font-uppercase">$CourseDateStart.Formati18N('%A, %d.%m.%Y')</span>
-                                            <span class="c-font-uppercase">$CourseDateEnd.Formati18N('%A, %d.%m.%Y')</span>
-                                        </div>
-                                        <%-- if Sections %>
-                                        <ul class="c-tags c-theme-ul-bg">
-                                            <% loop Sections %>
-                                            <li>$Title</li>
-                                            <% end_loop %>
-                                        </ul>
-                                        <% end_if --%>
-                                    </div>
-                                    -->
                                     <div class="typography c-desc">
                                         $Content
                                     </div>
@@ -55,19 +40,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <!-- BEGIN: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
-                            <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-                                    <h3 class="c-font-bold c-font-uppercase">$Title</h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <ul class="c-menu c-arrow-dot c-theme">
-                                <% loop OtherCourses($Course.ID) %>
-                                    <li><a href="$Link" title="$Title.XML">$Title.XML</a></li>
-                                <% end_loop %>
-                                </ul>
-                            </div>
-                            <!-- END: CONTENT/BLOG/BLOG-SIDEBAR-1 -->
+                        <% include SideBar %>
                         </div>
                     </div>
                 </div>

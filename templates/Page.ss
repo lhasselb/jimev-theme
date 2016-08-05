@@ -54,7 +54,7 @@
         <% include Header %>
         <!-- END: HEADER -->
         <!-- END: LAYOUT/HEADERS/HEADER-1 -->
-        <% include Alert %>
+        <% include Alarm %>
         $Layout
         <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
         <% include Footer %>

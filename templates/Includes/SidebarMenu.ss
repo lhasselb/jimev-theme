@@ -1,26 +1,17 @@
-<div class="subnav">
-	<nav class="panel panel-default">
-	    <% loop $Level(1) %>
-	    <div class="panel-heading">
-	        <h3 class="panel-title"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></h3>
-	    </div>
-	    <div class="panel-body">
-			<p>$Content.FirstParagraph()</p>
-		</div>
-	    <% end_loop %>
-	    <ul class="list-group list-group-flush">
-			<% loop $Menu(2) %>
-			<li class="$LinkingMode list-group-item">
-		        <a href="$Link" title="$Title.XML"<% if LinkOrCurrent = current %> class=" active"<% end_if %>>$MenuTitle.XML</a>
-				<% if $Children %>
-					<ul class="list-group list-group-flush list-group-sub">
-					<% loop $Children %>
-		        		<li class="list-group-item"><a href="$Link" title="$Title.XML" <% if LinkOrCurrent = current %> class="active"<% end_if %>><small>$MenuTitle.XML</small></a></li>
-					<% end_loop %>
-					</ul>
-				<% end_if %>
-			</li>
-			<% end_loop %>
-		</ul>
-	</nav>
-</div>
+                            <div class="c-content-ver-nav">
+                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                    <h3 class="c-font-bold c-font-uppercase">
+                                    <% if Parent %>$Parent.MenuTitle<% else %>$MenuTitle<% end_if %>
+                                    </h3>
+                                    <div class="c-line-left c-theme-bg"></div>
+                                </div>
+                                <ul class="c-menu c-arrow-dot1 c-theme">
+                                <% loop $Menu(2) %>
+                                <% if LinkOrCurrent != current %>
+                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% else %>
+                                    <li class="active">$MenuTitle.XML</li>
+                                <% end_if %>
+                                <% end_loop %>
+                                </ul>
+                            </div>

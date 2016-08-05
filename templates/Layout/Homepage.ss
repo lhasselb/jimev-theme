@@ -1,3 +1,4 @@
+        <!-- BEGIN: PAGE CONTAINER -->
         <div class="c-layout-page">
             <!-- BEGIN: PAGE CONTENT -->
             <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
@@ -14,8 +15,7 @@
                                 <div class="c-line-left c-theme-bg"></div>
                             </div>
                             <!-- End-->
-                            $Content
-                            $Form
+                            <div class="typography">$Content</div>
                         </div>
                     </div>
                 </div>
