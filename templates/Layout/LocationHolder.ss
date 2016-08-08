@@ -15,12 +15,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
-                            <h1>$Title</h1>
+                            <!--<h1>$Title</h1>-->
                             <div class="typography">$Content</div>
                             <div class="c-content-panel">
                                 <div class="c-label">$Title</div>
                                 <div class="c-body">
-                                    <div class="row">
+                                    <div class="row typography">
                                         <div class="col-md-12">
                                             <table class="table table-striped">
                                                 <thead><tr><th>Zeit</th><th>Ort</th><th>Bemerkung</th></tr></thead>

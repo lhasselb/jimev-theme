@@ -1,13 +1,13 @@
 /**
  * This support file is used to style the WYSIWYG editor in the CMS
  */
-
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all);
 @import "typography.css";
 //@import "../../bower_components/font-awesome/css/font-awesome.min.css";
 
 body.mceContentBody {
-    min-height: 200px;
-    font-size: 17px; /*62.5%;*/
+    min-height: 100px;
+    font-size: 12px; /*62.5%;*/
 }
 
 body.mceContentBody a.broken {

@@ -1,0 +1,40 @@
+
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all);
+/* General typography */
+.typography a {
+    color: #57bfe1;
+    font-weight: 500;
+}
+
+.typography a:hover {
+    color: #fff;/*#5c6873;*/
+    background-color: #57bfe1;
+    cursor: pointer;
+}
+
+.typography p {
+    color: #5c6873;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/* LocationPage.php, location.css - Jongliertreffen */
+.typography .rot {
+    color:red;
+    font-weight: 500 !important;
+}
+.typography .fett {
+    font-weight: 800 !important;
+}
+
+/* Specific styles for editing a LocationPage */
+body.mceContentBody {
+    min-height: 100px;
+    font-size: 12px; /*62.5%;*/
+}
+
+body.mceContentBody a.broken {
+    background-color: #FF7B71;
+    border: 1px red solid;
+}

@@ -1,3 +1,4 @@
+/* General typography */
 .typography a {
     color: #57bfe1;
     font-weight: 500;
@@ -16,6 +17,12 @@
     font-size: 17px;
 }
 
+.typography img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
 /* Color Next Generation Convention */
 .typography .first-letter {
     color: #903;
@@ -31,12 +38,11 @@
 .typography li.Jongliertreffen,.typography li.Jongliertreffen-faellt-leider-aus,.typography li.Jonglier-Events-und-Veranstaltungen,
 .typography li.Workshops {font-weight: 500 !important;}
 
+/* LocationPage.php, location.css - Jongliertreffen */
 .typography .rot {
     color:red;
     font-weight: 500 !important;
 }
-
-.typography img {
-    max-width: 100%;
-    height: auto;
+.typography .fett {
+    font-weight: 800 !important;
 }
