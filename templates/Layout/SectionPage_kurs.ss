@@ -31,6 +31,15 @@
                                     <% end_if %>
                                     <div class="c-title c-font-bold c-font-uppercase">$CourseTitle</div>
                                     <div class="typography c-desc">$Content</div>
+                                    <% if $Sections.count() > "1" %>
+                                    <div class="c-panel">
+                                        <ul class="c-tags typography">
+                                            <% loop Sections %>
+                                            <li><a href="$Link">$Title</a></li>
+                                            <% end_loop %>
+                                        </ul>
+                                    </div>
+                                    <% end_if %>
                             <% end_with %>
                                 </div>
                             </div>
