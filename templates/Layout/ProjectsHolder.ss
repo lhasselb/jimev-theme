@@ -4,39 +4,35 @@
             <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
                 <div class="container">
                     <div class="c-page-title c-pull-left">
-                        <h3 class="c-font-uppercase c-font-sbold">$Title</h3>
+                        <h2 class="c-font-uppercase c-font-sbold">$Title</h2>
                     </div>
                     <% include BreadCrumbs %>
                 </div>
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <div class="c-content-box c-size-md c-bg-white">
+            <div class="c-content-box c-size-md c-bg-white" role="main">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
-                            <h1>$Title</h1>
-                            <div class="typography">
-                            $Content
-                            </div>
+                            <div class="typography">$Content</div>
                             <% include Gallery %>
                         </div>
                         <div class="col-md-3">
-                            <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
-                                    <h3 class="c-font-bold c-font-uppercase">$Parent.Title</h3>
-                                    <div class="c-line-left c-theme-bg"></div>
-                                </div>
-                                <ul class="c-menu c-arrow-dot1 c-theme">
-                                <% loop $Menu(2) %>
+                        <% loop $Children %>
+                            <% if LinkOrCurrent != current %>
+                                <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                            <% else %>
+                                <li class="active">$MenuTitle.XML</li>
+                            <% end_if %>
+                            <% loop $Children %>
                                 <% if LinkOrCurrent != current %>
                                     <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                                 <% else %>
-                                    <li>$MenuTitle.XML</li>
+                                    <li class="active">$MenuTitle.XML</li>
                                 <% end_if %>
-                                <% end_loop %>
-                                </ul>
-                            </div>
+                            <% end_loop %>
+                        <% end_loop %>
                         </div>
                     </div>
                 </div>

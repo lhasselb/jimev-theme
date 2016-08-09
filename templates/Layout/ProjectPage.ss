@@ -4,7 +4,7 @@
             <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
                 <div class="container">
                     <div class="c-page-title c-pull-left">
-                        <h3 class="c-font-uppercase c-font-sbold">$Title</h3>
+                        <h2 class="c-font-uppercase c-font-sbold">$Title</h2>
                     </div>
                     <% include BreadCrumbs %>
                 </div>
@@ -15,12 +15,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
-                            <!--<h1>$Title</h1>-->
                             <div class="typography">$Content</div>
                             <% include Gallery %>
                         </div>
                         <div class="col-md-3">
-                        <% include SideBar %>
+                        <% loop $Children %>
+                            <% if LinkOrCurrent != current %>
+                                <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                            <% else %>
+                                <li class="active">$MenuTitle.XML</li>
+                            <% end_if %>
+                            <% loop $Children %>
+                                <% if LinkOrCurrent != current %>
+                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% else %>
+                                    <li class="active">$MenuTitle.XML</li>
+                                <% end_if %>
+                            <% end_loop %>
+                        <% end_loop %>
                         </div>
                     </div>
                 </div>
