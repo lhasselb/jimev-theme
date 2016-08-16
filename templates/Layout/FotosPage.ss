@@ -21,7 +21,7 @@
                         </div> /
                         <% loop Tags %>
                             <% if $Last %>
-                        <div data-filter=".identity" class="cbp-filter-item"> $Title
+                        <div data-filter=".$Title.LowerCase()" class="cbp-filter-item"> $Title
                             <div class="cbp-filter-counter"></div>
                         </div>
                             <% else %>
@@ -34,13 +34,14 @@
 
                     <div id="grid-container" class="cbp cbp-l-grid-agency">
                     <% loop Galleries %>
-                        <div class="cbp-item graphic">
+                        <div class="cbp-item <% loop GalleryTags %>$Title.LowerCase() <% end_loop %><">
                             <a href="#" target="_blank">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="$AlbumImage.URL" alt=""> </div>
                                 </div>
-                                <div class="cbp-l-grid-agency-title">$AlbumName, AlbumDescription, $AlbumYear.Year()</div>
+                                <!-- , AlbumDescription, $AlbumYear.Year() -->
+                                <div class="cbp-l-grid-agency-title">$AlbumName</div>
                                 <div class="cbp-l-grid-agency-desc">
                                 <% loop GalleryTags %>
                                     $Title<% if Last %><% else %> / <% end_if %>
