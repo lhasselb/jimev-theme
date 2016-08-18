@@ -15,8 +15,9 @@
                 <div class="container">
                     <div class="typography">$Content</div>
                     <div id="filters-container" class="cbp-l-filters-text">
-                        <div class="cbp-l-filters-text-sort">Filter:</div>
+                        <div class="cbp-l-filters-text-sort">Tags:</div>
                         <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Alle<div class="cbp-filter-counter"></div></div> / <% loop FotosPageTags %><div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
+                            <!--/ <div data-filter="2016" class="cbp-filter-item">2016<div class="cbp-filter-counter"></div></div>-->
                     </div>
 
                     <div id="grid-container" class="cbp cbp-l-grid-masonry-projects"><!-- cbp-l-grid-agency-->
