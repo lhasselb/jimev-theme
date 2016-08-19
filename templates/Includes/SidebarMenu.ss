@@ -1,5 +1,5 @@
                             <div class="c-content-ver-nav">
-                                <div class="c-content-title-1 c-theme c-title-md c-margin-t-40">
+                                <div class="c-content-title-1 c-theme c-title-md">
                                     <h3 class="c-font-bold c-font-uppercase">
                                     <% if Parent %>$Parent.MenuTitle<% else %>$MenuTitle<% end_if %>
                                     </h3>

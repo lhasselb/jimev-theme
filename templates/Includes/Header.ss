@@ -3,13 +3,12 @@
                 <div class="container">
                     <!-- BEGIN: INLINE NAV -->
                     <nav class="c-top-menu c-pull-left">
-                    <!-- Jonglieren in München https://www.facebook.com/groups/202087889832680/ | Akrobatik:https://www.facebook.com/groups/130714529242/ | Vertikaltuch: https://www.facebook.com/groups/aerialsilk.munich/ | Feuer: https://www.facebook.com/groups/258433057533210/ -->
                         <ul class="c-icons c-theme-ul">
                             <li>
                                 <a data-original-title="Facebook-Gruppen"
                                 data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom"
                                 data-content="<% loop FacebookLinks %><% if Last %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><% else %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><br/><% end_if %><% end_loop %>"
-                                data-html="true" aria-describedby="popoverFacebook"><i class="fa fa-facebook-square"></i></a><!-- icon-social-facebook -->
+                                data-html="true" aria-describedby="popoverFacebook"><span><i class="fa fa-facebook-square fa-lg"></i></span></a>
                             </li>
                         </ul>
                     </nav>

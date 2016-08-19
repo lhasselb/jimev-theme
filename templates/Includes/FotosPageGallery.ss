@@ -3,7 +3,7 @@
 <div class="cbp-l-project-subtitle">$AlbumDescription</div>
 <% end_with %>
 
-<div class="galleria" style="margin-right: auto;margin-left: auto;"></div>
+<div class="galleria"></div>
 <style type="text/css">
 div.galleria .galleria-stage {
     background: #fff;
@@ -36,18 +36,41 @@ Galleria.configure({
         exit_fullscreen: "Beende Vollbild",
         popout_image: "Bild in eigenem Fenster",
         showing_image: "Anzeige von Bild %s von %s"
-    }
+    },
+    dataSource: data,
 });
+
 
 Galleria.run('.galleria', {
-    dataSource: data
+    //dataSource: data
 });
 
+
 Galleria.ready(function() {
+    var gallery = this;
     /* Show thunbs as default view */
-    /*this.$('thumblink').click();*/
-    this.lazyLoadChunks(5);
+    /*gallery.$('thumblink').click();*/
+    //gallery.load(data);
+
+    gallery.lazyLoadChunks(5);
+
+
+
+    $('.cbp-popup-next,.cbp-popup-prev').click(function() {
+        gallery.destroy(data);
+        gallery.load(data);
+        window.setTimeout(function(){
+            gallery.lazyLoadChunks(5);
+        },10);
+
+    gallery.attachKeyboard({
+        left: gallery.prev,
+        right: gallery.next,
+    });
+
+    });
 });
+
 </script>
 
 

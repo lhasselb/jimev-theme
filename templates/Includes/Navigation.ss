@@ -4,12 +4,12 @@
 <% if $URLSegment == 'home' %>
     <% if $LinkOrSection == section %>
     <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
-    <span title="$Title.XML" class="c-link dropdown-toggle"><i class="fa fa-home fa-fw" aria-hidden="true"></i></span>
+    <span title="$MenuTitle" class="c-link dropdown-toggle"><i class="fa fa-home fa-fw" aria-hidden="true"></i></span>
     <span class="c-arrow c-toggler"></span>
     </li>
     <% else %>
     <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
-    <a href="$BaseHref" title="$Title.XML" class="c-link dropdown-toggle"><i class="fa fa-home fa-fw" aria-hidden="true"></i>
+    <a href="$BaseHref" title="Startseite und News" class="c-link dropdown-toggle tooltips" data-toggle="tooltip" data-placement="right"><i class="fa fa-home fa-fw" aria-hidden="true"></i>
     <span class="c-arrow c-toggler"></span>
     </a>
     </li>

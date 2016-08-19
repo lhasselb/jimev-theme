@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="c-content-blog-post-1-view">
-                            <% with $Course %>
+                                <% with $Course %>
                                 <div class="c-content-blog-post-1">
                                     <% if ContentImage %>
                                     <div class="c-media">
@@ -40,8 +40,8 @@
                                         </ul>
                                     </div>
                                     <% end_if %>
-                            <% end_with %>
                                 </div>
+                                <% end_with %>
                             </div>
                         </div>
                         <div class="col-md-3">
