@@ -157,6 +157,112 @@ module.exports = function(grunt) {
                         src: ['*.{txt}']
                     }
                 ]
+            },
+            dist: {
+              files: [
+                  {
+                      expand: true,
+                      cwd: 'src/img',
+                      src: ['**'],
+                      dest: 'dist/img'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'src/javascript/plugins',
+                      src: ['**'],
+                      dest: 'dist/javascript/plugins'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'src/javascript/scripts',
+                      src: ['**'],
+                      dest: 'dist/javascript/scripts'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/jquery/dist',
+                      src: 'jquery.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/velocity',
+                      src: 'velocity.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/velocity',
+                      src: 'velocity.ui.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/bootstrap-sass/assets/javascripts',
+                      src: 'bootstrap.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/js-cookie/src',
+                      src: 'js.cookie.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/css',
+                      src: 'bootstrap-datetimepicker.css',
+                      dest: 'dist/bower/css'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/moment/min',
+                      src: 'moment.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/moment/min',
+                      src: 'moment-with-locales.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/js',
+                      src: 'bootstrap-datetimepicker.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/galleria/src',
+                      src: 'galleria.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/fullcalendar/dist',
+                      src: 'fullcalendar.min.css',
+                      dest: 'dist/bower/css'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/fullcalendar/dist',
+                      src: 'fullcalendar.min.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/fullcalendar/dist',
+                      src: 'gcal.js',
+                      dest: 'dist/bower'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/fullcalendar/dist/lang',
+                      src: 'de.js',
+                      dest: 'dist/bower'
+                  },
+              ]
             }
 //          dist: {
 //              files: [
@@ -418,9 +524,9 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'dist/javascript/script.min.js': [
-                        /*'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',*/
                         'src/javascript/components.js',
-                        'src/javascript/app.js'
+                        'src/javascript/app.js',
+                        'src/javascript/main.js',
                     ]
                 }
             }
@@ -486,6 +592,7 @@ module.exports = function(grunt) {
 //      'usemin',
 //      'replace:postMin',
 //      'htmlmin'
+        'copy:dist'
     ]);
 
     // Default Task

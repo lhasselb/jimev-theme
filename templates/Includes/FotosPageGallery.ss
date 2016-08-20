@@ -52,22 +52,37 @@ Galleria.ready(function() {
     /*gallery.$('thumblink').click();*/
     //gallery.load(data);
 
-    gallery.lazyLoadChunks(5);
+    this.bind("loadfinish", function(e) {
+        // Galleria.log(this); // the gallery scope
+        // Galleria.log(e) // the event object
+        gallery.lazyLoadChunks(5);
+        gallery.detachKeyboard();
+    });
 
+    this.bind("fullscreen_enter", function(e) {
+        //console.log('enter');
+        /*gallery.attachKeyboard({
+            left: gallery.prev,
+            right: gallery.next,
+        });*/
+    });
 
+    this.bind("fullscreen_exit", function(e) {
+        //console.log('exit');
+        //gallery.detachKeyboard();
+    });
+
+    $('.galleria-image-nav-right,.galleria-image-nav-left').click(function() {
+        // Galleria.log(this);
+    });
 
     $('.cbp-popup-next,.cbp-popup-prev').click(function() {
         gallery.destroy(data);
         gallery.load(data);
+        gallery.setOptions({show:0})
         window.setTimeout(function(){
             gallery.lazyLoadChunks(5);
         },10);
-
-    gallery.attachKeyboard({
-        left: gallery.prev,
-        right: gallery.next,
-    });
-
     });
 });
 

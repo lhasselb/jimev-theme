@@ -54,7 +54,7 @@
 
 			&:hover {
 				background: lighten($general-head-font-color, 75%);
-			} 
+			}
 
 			&.cbp-filter-item-active {
 				background: lighten($general-head-font-color, 70%);
@@ -81,14 +81,14 @@
 	.cbp-filter-item {
 		border-radius: 0;
 		font-family: $general-font-family;
-	  	background-color: #FFFFFF;  
+	  	background-color: #FFFFFF;
 	  	border: 1px solid $general-head-font-color;
 	  	color: $general-head-font-color;
 	  	cursor: pointer;
 	  	font-size: 14px;
 	  	font-weight: 400;
 	  	padding: 0px 12px;
-		
+
 		&:hover {
 		  	background-color: $general-head-font-color;
 		  	color: #fff;
@@ -106,7 +106,7 @@
 	.cbp-filter-counter {
 		background: none;
 		display: inline-block;
-		top: -1px;  
+		top: -1px;
 		position: relative;
 
 		&:before {
@@ -151,15 +151,18 @@
 
 .cbp-l-grid-masonry-projects .cbp-caption-activeWrap {
   background-color: #000000;
-  background-color: rgba(#000000, 0.6);   
+  background-color: rgba(#000000, 0.6);
 }
 
 // Popup navigation wrap
 .cbp-popup-singlePage .cbp-popup-navigation-wrap {
-	z-index: $zindex-navbar + 11; 
-	background-color: #000000;
+	z-index: $zindex-navbar + 11;
+	background-color: #3f444a;//#000000;
   	background-color: rgba(#000000, 0.8);
 }
+
+// Popup navigation
+.cbp-popup-next,.cbp-popup-prev,.cbp-popup-close {}
 
 // Project detauls
 
@@ -169,7 +172,7 @@
   	font-family: $general-font-family;
 	text-transform: uppercase;
   	font-size: 17px;
-  	font-weight: 600;   
+  	font-weight: 600;
 }
 
 .cbp-l-grid-masonry-projects-desc {
@@ -185,9 +188,9 @@
 	text-transform: uppercase;
   	font-size: 38px;
   	font-weight: 600;
-  	letter-spacing: 1px;  
+  	letter-spacing: 1px;
 }
- 
+
 .cbp-l-project-subtitle {
 	font-family: $general-font-family;
 	margin-top: 2px;
@@ -202,7 +205,7 @@
   	font-size: 17px;
 }
 
-.cbp-l-project-desc-title span, 
+.cbp-l-project-desc-title span,
 .cbp-l-project-details-title span {
 	font-family: $general-font-family;
 	display: inline-block;
@@ -281,7 +284,7 @@
 }
 
 .cbp-l-project-related-title {
-	font-family: $general-font-family; 
+	font-family: $general-font-family;
   	color: lighten($general-head-font-color, 15%);
 	font-size: 16px;
   	font-weight: 600;
@@ -358,14 +361,14 @@
 		font-family: $general-font-family;
 		font-size: 18px;
   		font-weight: 400;
-  		color: $general-head-font-color; 
+  		color: $general-head-font-color;
 
 		.fa {
   			margin-right: 6px;
   			width: 20px;
-  			text-align: center;  
-  			font-size: 20px;  
-  			color: #cad5e0;   
+  			text-align: center;
+  			font-size: 20px;
+  			color: #cad5e0;
 		}
 	}
 
@@ -380,7 +383,7 @@
 // START : Custom Oswald Hover
 
 .cbp-l-grid-masonry-projects .cbp-l-caption-body a {
-	font-family: $general-font-family; 
+	font-family: $general-font-family;
 	line-height:16px;
 	font-size:12px;
 	font-weight:4600;
