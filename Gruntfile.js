@@ -131,12 +131,19 @@ module.exports = function(grunt) {
 //          },
             serve: {
                 files: [
+                  {
+                      expand: true,
+                      cwd: 'bower_components/font-awesome/fonts',
+                      src: ['**'],
+                      dest: 'fonts'
+                  },
                     {
                         expand: true,
                         cwd: 'src/img/',
                         src: ['**'],
                         dest: 'dist/img'
                     },
+
                     {
                         expand: true,
                         cwd: 'src/images/',
@@ -155,7 +162,13 @@ module.exports = function(grunt) {
                         cwd: 'src',
                         dest: 'build',
                         src: ['*.{txt}']
-                    }
+                    },
+                  {
+                      expand: true,
+                      cwd: 'bower_components',
+                      src: '**',
+                      dest: 'javascript'
+                  },
                 ]
             },
             dist: {
@@ -165,6 +178,12 @@ module.exports = function(grunt) {
                       cwd: 'src/img',
                       src: ['**'],
                       dest: 'dist/img'
+                  },
+                  {
+                      expand: true,
+                      cwd: 'bower_components/font-awesome/fonts',
+                      src: ['**'],
+                      dest: 'fonts'
                   },
                   {
                       expand: true,
@@ -180,88 +199,10 @@ module.exports = function(grunt) {
                   },
                   {
                       expand: true,
-                      cwd: 'bower_components/jquery/dist',
-                      src: 'jquery.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/velocity',
-                      src: 'velocity.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/velocity',
-                      src: 'velocity.ui.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/bootstrap-sass/assets/javascripts',
-                      src: 'bootstrap.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/js-cookie/src',
-                      src: 'js.cookie.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/css',
-                      src: 'bootstrap-datetimepicker.css',
-                      dest: 'dist/bower/css'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/moment/min',
-                      src: 'moment.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/moment/min',
-                      src: 'moment-with-locales.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/js',
-                      src: 'bootstrap-datetimepicker.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/galleria/src',
-                      src: 'galleria.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/fullcalendar/dist',
-                      src: 'fullcalendar.min.css',
-                      dest: 'dist/bower/css'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/fullcalendar/dist',
-                      src: 'fullcalendar.min.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/fullcalendar/dist',
-                      src: 'gcal.js',
-                      dest: 'dist/bower'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/fullcalendar/dist/lang',
-                      src: 'de.js',
-                      dest: 'dist/bower'
-                  },
+                      cwd: 'bower_components',
+                      src: '**',
+                      dest: 'javascript'
+                  }
               ]
             }
 //          dist: {
