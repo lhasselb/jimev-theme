@@ -5,6 +5,11 @@
         });
 }(jQuery));
 
+/* lazyload images - http://www.appelsiini.net/projects/lazyload */
+$(function() {
+    $("img.lazy").lazyload();
+});
+
 /* Avoid `console` errors in browsers that lack a console. */
 (function() {
     var method;
@@ -27,4 +32,3 @@
         }
     }
 }());
-

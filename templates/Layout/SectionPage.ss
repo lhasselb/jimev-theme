@@ -33,6 +33,15 @@
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
                                     <div class="typography c-desc">$Content</div>
+                                    <div class="c-panel">
+                                    <div class="c-date">$NiceNewsDate</div>
+                                        <ul class="c-tags c-theme-ul-bg">
+                                            <% loop Sections %>
+                                            <!--<li><a href="$Link">$Title</a></li>-->
+                                            <li>$Title</li>
+                                            <% end_loop %>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <% end_loop %>
                                 <% include CoursePagination %>

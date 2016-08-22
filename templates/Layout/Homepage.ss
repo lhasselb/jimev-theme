@@ -21,16 +21,16 @@
                 </div>
             </div>
             <!-- END: CONTENT/MISC/ABOUT-3 -->
-            <% if LatestNews %>
+            <% if PaginatedLatestNews %>
             <!-- BEGIN: CONTENT/MISC/RECENT-NEWS -->
-            <div class="c-content-box c-size-md c-bg-grey-1">
+            <div class="news c-content-box c-size-md c-bg-grey-1">
                 <div class="container">
                     <div class="c-content-title-1">
                         <h3 class="c-font-uppercase c-center c-font-bold">News</h3>
                         <div class="c-line-center"></div>
                     </div>
                     <div class="row" data-auto-height="true">
-                            <% loop LatestNews %>
+                            <% loop PaginatedLatestNews %>
                                 <% include Homepage_NewsSummary %>
                             <% end_loop %>
                     </div>

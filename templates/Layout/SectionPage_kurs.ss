@@ -54,7 +54,13 @@
                                 </div>
                                 <ul class="c-menu c-arrow-dot1 c-theme">
                                 <% loop $Menu(2) %>
+                                <% if LinkOrCurrent != current %>
                                     <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                                <% else %>
+                                    <li>
+                                        <a class="active" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+                                    </li>
+                                <% end_if %>
                                 <% end_loop %>
                                 </ul>
                             </div>
