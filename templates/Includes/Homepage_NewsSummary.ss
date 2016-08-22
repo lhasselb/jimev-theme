@@ -11,7 +11,7 @@
                                 $NewsTitle
                                 <% if NewsImage %>
                                 <div class="c-media">
-                                    <img class="lazy c-overlay-object img-responsive" data-original="$NewsImage.CroppedFocusedImage(340,100).URL" width="340" height="100" alt="$Title">
+                                    <img class="img-responsive" src="$NewsImage.CroppedFocusedImage(300,100).URL" width="300" height="100" alt="$Title">
                                 </div>
                                 <% end_if %>
                                 </a>

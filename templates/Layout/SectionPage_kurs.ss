@@ -23,7 +23,7 @@
                                         <div class="c-content-media-2-slider" data-slider="owl" data-single-item="true" data-auto-play="4000">
                                             <div class="owl-carousel owl-theme c-theme owl-single">
                                                 <div class="item">
-                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.URL); min-height: 460px;"> </div>
+                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.CroppedFocusedImage(813,460).URL); min-height: 460px;"> </div>
                                                 </div>
                                             </div>
                                         </div>
