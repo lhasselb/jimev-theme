@@ -6,7 +6,7 @@
                             <% loop Sliders %>
                             <% if $First %>
                             <!--BEGIN: SLIDE #$Pos -->
-                            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
+                            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-delay="6000">
                                 <img alt="$Title" src="$SliderImage.URL" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">

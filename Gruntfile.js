@@ -166,7 +166,7 @@ module.exports = function(grunt) {
                   {
                       expand: true,
                       cwd: 'bower_components',
-                      src: '**/*.js',
+                      src: '**/*.{js,css}',
                       dest: 'javascript'
                   },
                 ]
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
                   {
                       expand: true,
                       cwd: 'bower_components',
-                      src: '**',
+                      src: '**/*.{js,css}',
                       dest: 'javascript'
                   }
               ]

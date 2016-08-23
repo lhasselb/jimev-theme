@@ -72,5 +72,5 @@
     <![endif]-->
 
     </body>
-$RenderDebugBar
+
 </html>
