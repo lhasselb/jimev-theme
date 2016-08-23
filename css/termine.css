@@ -18,14 +18,14 @@
     font-size: 17px;
 }
 
-/* LocationPage.php, location.css - Jongliertreffen */
-.typography .rot {
-    color:red;
-    font-weight: 500 !important;
-}
-.typography .fett {
-    font-weight: 800 !important;
-}
+/* GoogleCalendarPage */
+.typography li.Jongliertreffen {color: #0D7813;}
+.typography li.Jongliertreffen-faellt-leider-aus {color: #A32929;}
+.typography li.Jonglier-Events-und-Veranstaltungen {color: #E0C240;}
+.typography li.Workshops {color: #060D5E;}
+.typography li.Jongliertreffen,.typography li.Jongliertreffen-faellt-leider-aus,.typography li.Jonglier-Events-und-Veranstaltungen,
+.typography li.Workshops {font-weight: 500 !important;}
+
 
 body.mceContentBody {
     min-height: 100px;
