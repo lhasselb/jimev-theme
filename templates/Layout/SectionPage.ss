@@ -18,12 +18,12 @@
                             <div class="c-content-blog-post-1-list">
                                 <% loop PaginatedCourses %>
                                 <div class="c-content-blog-post-1">
-                                    <% if ContentImage %>
+                                    <% if CourseImage %>
                                     <div class="c-media">
                                         <div class="c-content-media-2-slider" data-slider="owl" data-single-item="true" data-auto-play="4000">
                                             <div class="owl-carousel owl-theme c-theme owl-single">
                                                 <div class="item">
-                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.CroppedFocusedImage(758,230).URL); min-height: 230px;"> </div>
+                                                    <div class="c-content-media-2" style="background-image: url($CourseImage.CroppedImage(758,230).URL); min-height: 230px;"> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -32,7 +32,7 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
-                                    <div class="typography c-desc">$Content</div>
+                                    <div class="typography c-desc">$CourseContent</div>
                                     <div class="c-panel">
                                     <div class="c-date">$NiceNewsDate</div>
                                         <ul class="c-tags c-theme-ul-bg">

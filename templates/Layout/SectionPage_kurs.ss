@@ -18,19 +18,19 @@
                             <div class="c-content-blog-post-1-view">
                                 <% with $Course %>
                                 <div class="c-content-blog-post-1">
-                                    <% if ContentImage %>
+                                    <% if CourseImage %>
                                     <div class="c-media">
                                         <div class="c-content-media-2-slider" data-slider="owl" data-single-item="true" data-auto-play="4000">
                                             <div class="owl-carousel owl-theme c-theme owl-single">
                                                 <div class="item">
-                                                    <div class="c-content-media-2" style="background-image: url($ContentImage.CroppedFocusedImage(813,460).URL); min-height: 460px;"> </div>
+                                                    <div class="c-content-media-2" style="background-image: url($CourseImage.CroppedFocusedImage(813,460).URL); min-height: 460px;"> </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <% end_if %>
                                     <div class="c-title c-font-bold c-font-uppercase">$CourseTitle</div>
-                                    <div class="typography c-desc">$Content</div>
+                                    <div class="typography c-desc">$CourseContent</div>
                                     <% if $Sections.count() > "1" %>
                                     <div class="c-panel">
                                         <ul class="c-tags typography">

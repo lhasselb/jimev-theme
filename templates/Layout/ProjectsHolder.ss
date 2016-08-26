@@ -11,28 +11,14 @@
             </div>
             <!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
             <!-- BEGIN: PAGE CONTENT -->
-            <div class="c-content-box c-size-md c-bg-white" role="main">
+            <div class="c-content-box c-size-md c-bg-white">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
                             <div class="typography">$Content</div>
-                            <% include Gallery %>
                         </div>
                         <div class="col-md-3">
-                        <% loop $Children %>
-                            <% if LinkOrCurrent != current %>
-                                <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
-                            <% else %>
-                                <li class="active">$MenuTitle.XML</li>
-                            <% end_if %>
-                            <% loop $Children %>
-                                <% if LinkOrCurrent != current %>
-                                    <li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
-                                <% else %>
-                                    <li class="active">$MenuTitle.XML</li>
-                                <% end_if %>
-                            <% end_loop %>
-                        <% end_loop %>
+                        <% include SideBar %>
                         </div>
                     </div>
                 </div>
