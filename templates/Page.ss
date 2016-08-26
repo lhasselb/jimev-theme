@@ -38,10 +38,7 @@
         <!-- BEGIN THEME STYLES -->
         <link href="$ThemeDir/dist/css/plugins.css" rel="stylesheet" type="text/css">
         <link href="$ThemeDir/dist/css/components.css" rel="stylesheet" type="text/css">
-        <!--<link href="$ThemeDir/dist/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css" />-->
-        <!--<link href="$ThemeDir/dist/css/style.css" rel="stylesheet" id="style" type="text/css" />-->
         <link href="$ThemeDir/dist/css/themes/blue3.css" rel="stylesheet" id="style_theme" type="text/css" />
-        <!--<link href="$ThemeDir/dist/css/typography.css" rel="stylesheet" type="text/css" />-->
         <link href="$ThemeDir/dist/css/custom.css" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
         <% include Icons %>
