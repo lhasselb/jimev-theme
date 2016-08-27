@@ -15,14 +15,12 @@
     	$MetaTags(false)
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
-        <!-- contains bootstrap, font-awesome & simple-line-icons -->
-    	<link rel="stylesheet" href="$ThemeDir/dist/css/style.css">
         <link href="$ThemeDir/dist/javascript/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
         <link href="$ThemeDir/dist/javascript/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
-        <!--<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
         <link href="$ThemeDir/dist/javascript/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="$ThemeDir/dist/javascript/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
-        <!--<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+        <!-- contains bootstrap & font-awesome -->
+    	<link rel="stylesheet" href="$ThemeDir/dist/css/bs_fa.css">
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN: BASE PLUGINS  -->
         <link href="$ThemeDir/dist/javascript/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
