@@ -17,10 +17,10 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
         <link href="$ThemeDir/dist/javascript/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
         <link href="$ThemeDir/dist/javascript/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="$ThemeDir/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="$ThemeDir/dist/javascript/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="$ThemeDir/dist/javascript/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
-        <!-- contains bootstrap & font-awesome -->
-    	<link rel="stylesheet" href="$ThemeDir/dist/css/bs_fa.css">
+        <link href="$ThemeDir/javascript/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN: BASE PLUGINS  -->
         <link href="$ThemeDir/dist/javascript/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
@@ -41,7 +41,7 @@
         <!-- END THEME STYLES -->
         <% include Icons %>
         <script>themedir = '{$ThemeDir}';</script>
-        <script src="{$ThemeDir}/javascript/modernizr/modernizr.js"></script>
+        <script src="{$ThemeDir}/bower_components/modernizr/modernizr.js"></script>
     </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">

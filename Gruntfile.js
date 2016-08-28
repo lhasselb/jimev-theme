@@ -143,13 +143,6 @@ module.exports = function(grunt) {
                         src: ['**'],
                         dest: 'dist/img'
                     },
-
-                    {
-                        expand: true,
-                        cwd: 'src/images/',
-                        src: ['**'],
-                        dest: 'dist/images'
-                    },
                     {
                         expand: true,
                         cwd: 'src/javascript/',
@@ -166,7 +159,7 @@ module.exports = function(grunt) {
                   {
                       expand: true,
                       cwd: 'bower_components',
-                      src: '**/*.{js,css}',
+                      src: '**/*.{js,css,woff,ttf,eot,svg,woff2}',
                       dest: 'javascript'
                   },
                 ]
@@ -200,7 +193,7 @@ module.exports = function(grunt) {
                   {
                       expand: true,
                       cwd: 'bower_components',
-                      src: '**/*.{js,css}',
+                      src: '**/*.{js,css,woff,ttf,eot,svg,woff2}',
                       dest: 'javascript'
                   }
               ]

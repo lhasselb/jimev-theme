@@ -59,9 +59,9 @@
                     <div class="c-navbar-wrapper clearfix">
                         <div class="c-brand c-pull-left">
                             <a href="$BaseHref" class="c-logo">
-                                <img src="$ThemeDir/dist/images/logos/logo.png" alt="Jim e.V." class="c-desktop-logo">
-                                <img src="$ThemeDir/dist/images/logos/logo.png" alt="Jim e.V." class="c-desktop-logo-inverse">
-                                <img src="$ThemeDir/dist/images/logos/logo-mobile.png" alt="Jim e.V." class="c-mobile-logo"> </a>
+                                <img src="$ThemeDir/dist/img/logos/logo.png" alt="Jim e.V." class="c-desktop-logo">
+                                <img src="$ThemeDir/dist/img/logos/logo.png" alt="Jim e.V." class="c-desktop-logo-inverse">
+                                <img src="$ThemeDir/dist/img/logos/logo-mobile.png" alt="Jim e.V." class="c-mobile-logo"> </a>
                             <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
                                 <span class="c-line"></span>
                                 <span class="c-line"></span>
