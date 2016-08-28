@@ -41,7 +41,7 @@
         <!-- END THEME STYLES -->
         <% include Icons %>
         <script>themedir = '{$ThemeDir}';</script>
-        <script src="{$ThemeDir}/bower_components/modernizr/modernizr.js"></script>
+        <script src="{$ThemeDir}/javascript/modernizr/modernizr.js"></script>
     </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed c-layout-header-topbar c-layout-header-topbar-collapse">

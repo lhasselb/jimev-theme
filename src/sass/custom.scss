@@ -90,11 +90,11 @@ label.error {color :red;}
 }
 
 /* Implement the existend classes for SS TinyMCE */
-img.left {float: left;}
-img.right {float: right;}
-img.center {display : block;margin: 0 auto 0 auto;text-align: center;}
-img.leftAlone {float: left;margin-right: 100%;}
-img.rightAlone {float: right;margin-left: 100%;}
+.typography img.left {float: left; margin-top: 5px;}
+.typography img.right {float: right; margin-top: 5px;}
+.typography img.center {display : block;margin: 0 auto 0 auto;text-align: center;}
+.typography img.leftAlone {float: left;margin-right: 100%;}
+.typography img.rightAlone {float: right;margin-left: 100%;}
 
 /* Google Maps */
 .map-container {width: 100%;}
