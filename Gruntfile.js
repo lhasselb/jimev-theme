@@ -131,12 +131,6 @@ module.exports = function(grunt) {
 //          },
             serve: {
                 files: [
-                  {
-                      expand: true,
-                      cwd: 'bower_components/font-awesome/fonts',
-                      src: ['**'],
-                      dest: 'fonts'
-                  },
                     {
                         expand: true,
                         cwd: 'src/img/',
@@ -171,12 +165,6 @@ module.exports = function(grunt) {
                       cwd: 'src/img',
                       src: ['**'],
                       dest: 'dist/img'
-                  },
-                  {
-                      expand: true,
-                      cwd: 'bower_components/font-awesome/fonts',
-                      src: ['**'],
-                      dest: 'fonts'
                   },
                   {
                       expand: true,
