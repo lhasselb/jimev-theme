@@ -32,9 +32,9 @@
                                     <div class="c-title c-font-bold c-font-uppercase">
                                         <a href="$Link">$CourseTitle</a>
                                     </div>
-                                    <div class="typography c-desc">$CourseContent</div>
-                                    <div class="c-panel">
-                                    <div class="c-date">$NiceNewsDate</div>
+                                    <div class="typography c-desc">$CourseShort</div>
+                                    <div class="typography c-panel">
+                                        <!--<div class="c-date">$NiceNewsDate</div>--><a href="$Link" title="$Title">...weiter zum Kurs <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
                                         <ul class="c-tags c-theme-ul-bg">
                                             <% loop Sections %>
                                             <!--<li><a href="$Link">$Title</a></li>-->
