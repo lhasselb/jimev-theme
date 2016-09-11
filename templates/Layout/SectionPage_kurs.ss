@@ -40,6 +40,7 @@
                                         </ul>
                                     </div>
                                     <% end_if %>
+                                    <% if Album %><div class="galleria"></div><% end_if %>
                                 </div>
                                 <% end_with %>
                             </div>
