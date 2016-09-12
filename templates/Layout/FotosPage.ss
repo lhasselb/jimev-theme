@@ -29,7 +29,7 @@
                                     <div class="c-masonry-border"></div>
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <a href="$Link" class="cbp-singlePage cbp-l-caption-buttonLeft btn btn-lg  c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Öffnen</a>
+                                            <a href="$AlbumLink" class="cbp-singlePage cbp-l-caption-buttonLeft btn btn-lg  c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">Öffnen</a>
                                         </div>
                                     </div>
                                 </div>
