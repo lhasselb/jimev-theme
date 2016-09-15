@@ -14,15 +14,15 @@
             <div class="c-content-box c-size-md">
                 <div class="container">
                     <div class="typography">$Content</div>
+
                     <div id="filters-container" class="cbp-l-filters-text">
                         <div class="cbp-l-filters-text-sort">Tags:</div>
-                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Alle<div class="cbp-filter-counter"></div></div> / <% loop FotosPageTags %><div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
-                            <!--/ <div data-filter="2016" class="cbp-filter-item">2016<div class="cbp-filter-counter"></div></div>-->
+                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Alle<div class="cbp-filter-counter"></div></div>/<% loop FotosPageTags %><div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>/<% loop FotosPageYears %><div data-filter=".$AlbumYear" class="cbp-filter-item">$AlbumYear<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
                     </div>
 
                     <div id="grid-container" class="cbp cbp-l-grid-masonry-projects"><!-- cbp-l-grid-agency-->
                     <% loop Galleries %>
-                        <div class="cbp-item <% loop GalleryTags %>$TagTitle <% end_loop %>">
+                        <div class="cbp-item <% loop GalleryTags %>$TagTitle <% end_loop %>$AlbumDate.Year">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap"><img src="$AlbumOrFirstImage.croppedImage(600,600).URL" alt="$AlbumTitle"></div>
                                 <div class="cbp-caption-activeWrap">
