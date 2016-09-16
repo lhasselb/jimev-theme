@@ -23,13 +23,13 @@
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Link</th><th>Beschreibung</th>
+                                                    <th class="col-md-4">Link</th><th class="col-md-8">Beschreibung</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                             <% loop Links %>
                                                 <tr>
-                                                    <td>$FriendlyLink</td><td>$Description</td>
+                                                    <td class="col-md-4">$FriendlyLink</td><td clas="col-md-8">$Description</td>
                                                 </tr>
                                             <% end_loop %>
                                             </tbody>
