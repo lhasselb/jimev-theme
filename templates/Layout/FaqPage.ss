@@ -23,7 +23,7 @@
                                     <div data-filter=".{$Title.LowerCase()}" class="cbp-filter-item">$Title</div>
                                     <% end_loop %>
                                 </div>
-                                <div id="grid-container" class="cbp cbp-l-grid-faq">
+                                <div id="grid-container" class="cbp cbp-l-grid-faq typography">
                                     <% loop FAQS %>
                                     <div class="cbp-item <% loop FAQTags %>$Title.LowerCase() <% end_loop %>">
                                         <div class="cbp-caption">
