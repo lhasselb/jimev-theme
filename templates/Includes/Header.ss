@@ -7,7 +7,7 @@
                             <li>
                                 <a data-original-title="Facebook-Gruppen"
                                 data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="bottom"
-                                data-content="<% loop FacebookLinks %><% if Last %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><% else %><a href='$FacebookLink.URL' class='jimevLink'>$FacebookLink.Title</a><br/><% end_if %><% end_loop %>"
+                                data-content="<% loop FacebookLinks %><% if Last %><a href='$FacebookLink.URL' class='jimevLink' $FacebookLink.TargetAttr>$FacebookLink.Title</a><% else %><a href='$FacebookLink.URL' class='jimevLink' $FacebookLink.TargetAttr>$FacebookLink.Title</a><br/><% end_if %><% end_loop %>"
                                 data-html="true" aria-describedby="popoverFacebook"><span><i class="fa fa-facebook-square fa-lg"></i></span></a>
                             </li>
                         </ul>

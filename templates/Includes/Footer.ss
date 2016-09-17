@@ -5,7 +5,7 @@
                 <div class="c-linkfooter">
                     <div class="c-body">
                         <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-9">
                                 <ul class="c-links c-theme-ul">
                                     <li>
                                         <a href="impressum/">Impressum</a>
@@ -16,6 +16,17 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="col-md-3 c-right">
+                            <ul class="c-icons c-theme-ul c-links">
+                                <li>
+                                    <a data-original-title="Facebook-Gruppen"
+                                    data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="top"
+                                    data-content="<% loop FacebookLinks %><% if Last %><a href='$FacebookLink.URL' class='jimevLink' $FacebookLink.TargetAttr>$FacebookLink.Title</a>
+<% else %><a href='$FacebookLink.URL' class='jimevLink' $FacebookLink.TargetAttr>$FacebookLink.Title</a><br/><% end_if %><% end_loop %>" data-html="true" aria-describedby="popoverFacebook"><span><i class="fa fa-facebook-square fa-lg"></i></span></a>
+                                </li>
+                            </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
