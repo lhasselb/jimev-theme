@@ -16,8 +16,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-3 c-right">
-                            <ul class="c-icons c-theme-ul c-links">
+                            <div class="col-md-3">
+                            <ul class="c-icons c-theme-ul c-right c-links">
                                 <li>
                                     <a data-original-title="Facebook-Gruppen"
                                     data-animation="false" data-easein="bounceLeftIn" href="#" rel="popover" data-placement="top"
