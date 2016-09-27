@@ -16,8 +16,11 @@
                     <div class="typography">$Content</div>
 
                     <div id="filters-container" class="cbp-l-filters-button">
-                        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">Alle<div class="cbp-filter-counter"></div></div><% loop ProjectPageTags %>
-                        <div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% end_loop %><% loop ProjectPageYears %>
+                        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">Alle<div class="cbp-filter-counter"></div></div>
+                        <% loop ProjectPageTags %>
+                        <div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% end_loop %>
+                        <div style="clear: both;"></div>
+                        <% loop ProjectPageYears %>
                         <div data-filter=".$ProjectYear" class="cbp-filter-item">$ProjectYear<div class="cbp-filter-counter"></div>
                         </div><% end_loop %>
                     </div>

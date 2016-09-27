@@ -17,7 +17,11 @@
 
                     <div id="filters-container" class="cbp-l-filters-text">
                         <div class="cbp-l-filters-text-sort">Tags:</div>
-                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Alle<div class="cbp-filter-counter"></div></div>/<% loop FotosPageTags %><div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>/<% loop FotosPageYears %><div data-filter=".$AlbumYear" class="cbp-filter-item">$AlbumYear<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
+                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Alle<div class="cbp-filter-counter"></div></div>/
+                        <% loop FotosPageTags %><div data-filter=".$TagTitle" class="cbp-filter-item">$Title<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
+                        <div style="clear: both;"></div>
+                        <div class="cbp-l-filters-text-sort">Jahre:</div>
+                        <% loop FotosPageYears %><div data-filter=".$AlbumYear" class="cbp-filter-item">$AlbumYear<div class="cbp-filter-counter"></div></div><% if $Last %><% else %> / <% end_if %><% end_loop %>
                     </div>
 
                     <div id="grid-container" class="cbp cbp-l-grid-masonry-projects"><!-- cbp-l-grid-agency-->
