@@ -17,7 +17,7 @@
                         <div class="col-md-9">
                             <div class="typography">$Content</div>
                             <div class="c-content-panel">
-                                <div class="c-label">$Title</div>
+                                <div class="c-label">Mitgliedsantrag: Anmeldung</div>
                                 <div class="c-body">$EnrollForm</div>
                             </div>
                         </div>
