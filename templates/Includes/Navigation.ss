@@ -3,49 +3,47 @@
 <% loop $Menu(1) %>
 <% if $URLSegment == 'home' %>
     <% if $LinkOrSection == section %>
-    <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
-    <span title="$MenuTitle" class="c-link dropdown-toggle"><i class="fa fa-home fa-fw" aria-hidden="true"></i></span>
-    <span class="c-arrow c-toggler"></span>
+    <li class=<% if LinkOrSection = section %>"c-active"<% end_if %>>
+    <a href="#" title="$MenuTitle" class="c-link">
+    <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+    </a>
     </li>
     <% else %>
-    <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
-    <a href="$BaseHref" title="Startseite und News" class="c-link dropdown-toggle tooltips" data-toggle="tooltip" data-placement="right"><i class="fa fa-home fa-fw" aria-hidden="true"></i>
-    <span class="c-arrow c-toggler"></span>
+    <li>
+    <a href="$BaseHref" title="Startseite und News" class="c-link tooltips" data-toggle="tooltip" data-placement="right"><i class="fa fa-home fa-fw" aria-hidden="true"></i>
     </a>
     </li>
     <% end_if %>
 <% else %>
-    <li class=<% if LinkOrSection = section %>"c-active"<% else %>"c-menu-type-classic"<% end_if %>>
-    <a href="$Link" title="$Title.XML" class="c-link dropdown-toggle">$MenuTitle.XML
-    <span class="c-arrow c-toggler"></span>
-    </a>
-    <!-- 2nd level start -->
     <% if $Children %>
+    <li class="<% if LinkOrSection = section %>c-active <% end_if %>c-menu-type-classic">
+        <a href="$Link" title="$Title.XML" class="c-link dropdown-toggle">$MenuTitle.XML
+        <span class="c-arrow c-toggler"></span>
+        </a>
+        <!-- 2nd level start -->
         <ul class="dropdown-menu c-menu-type-classic c-pull-left">
         <% loop $Children %>
+            <% if $Children %>
             <li class="dropdown-submenu">
                 <a href="$Link" title="$Title.XML">$MenuTitle.XML
                 <span class="c-arrow c-toggler"></span>
                 </a>
-            <!-- 3rd level start -->
-            <%-- if $Children %>
-            <ul class="dropdown-menu c-pull-right">
-                <% loop $Children %>
-                <li <% if $Children %>class="dropdown-submenu"<% end_if %>>
-                    <a href="$Link" title="$Title.XML">$MenuTitle.XML
-                    <span class="c-arrow c-toggler"></span>
-                    </a>
-                </li>
-                <% end_loop %>
-            </ul>
-            <% end_if --%>
-            <!-- 3rd level end -->
-        </li>
+            </li>
+            <% else %>
+            <li>
+                <a href="$Link" title="$Title.XML">$MenuTitle.XML
+                </a>
+            </li>
+            <% end_if %>
         <% end_loop %>
-    </ul>
-    <% end_if %>
-    <!-- 2nd level end -->
+        </ul>
+        <!-- 2nd level end -->
     </li>
+    <% else %>
+    <li <% if LinkOrSection = section %>class="c-active"<% end_if %>>
+        <a href="$Link" class="c-link" title="$Title.XML">$MenuTitle.XML</a>
+    </li>
+    <% end_if %>
 <% end_if %>
 <% end_loop %>
 </ul>
