@@ -28,15 +28,23 @@
                     <% end_if %>
                         <ul class="c-links c-theme-ul">
                             <li>
-                                <a href="kontakt/" class="jimevLink">Kontakt</a>
+                                <a href="kontakt/" class="jimevLink" title="Kontakt">Kontakt</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="links/" class="jimevLink">Links</a>
+                                <a href="links/" class="jimevLink" title="Links">
+                                <span aria-hidden="true" class="icon-link"></span> Links</a>
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="faq/" class="jimevLink">FAQ</a>
+                                <a href="faq/" class="jimevLink" title="FAQ">
+                                <span aria-hidden="true" class="icon-question"></span> FAQ</a>
+                            </li>
+                            <li class="c-divider">|</li>
+                            <li>
+                                <a href="#" class="jimevLink" title="E-Mail im Newsletter eintragen"
+                                data-toggle="modal" data-target="#newsletter-form">
+                                <span aria-hidden="true" class="icon-envelope-open"></span> Newsletter</a>
                             </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">

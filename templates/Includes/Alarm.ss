@@ -2,8 +2,7 @@
             <% loop Alert %>
                 <div id="Modal-$ID" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="ModalLabel$ID" aria-hidden="true"
                 data-startyear="$StartYear" data-startmonth="$StartMonth" data-startday="$StartDay" data-starthour="$StartHour" data-startminute="$StartMinute"
-                data-endyear="$EndYear" data-endmonth="$EndMonth" data-endday="$EndDay" data-endhour="$EndHour" data-endminute="$EndMinute"
-                data-easein="expandIn">
+                data-endyear="$EndYear" data-endmonth="$EndMonth" data-endday="$EndDay" data-endhour="$EndHour" data-endminute="$EndMinute"  data-easein="expandIn">
                     <div class="modal-dialog">
                         <div class="modal-content c-square">
                             <div class="modal-header">

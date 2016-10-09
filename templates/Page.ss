@@ -51,6 +51,7 @@
         <!-- END: HEADER -->
         <!-- END: LAYOUT/HEADERS/HEADER-1 -->
         <% include Alarm %>
+        <% include NewsletterModal %>
         $Layout
         <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
         <% include Footer %>
