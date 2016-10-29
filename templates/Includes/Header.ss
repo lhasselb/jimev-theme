@@ -43,7 +43,7 @@
                             <li class="c-divider">|</li>
                             <li>
                                 <a href="#" class="jimevLink" title="E-Mail im Newsletter eintragen"
-                                data-toggle="modal" data-target="#newsletter-form">
+                                data-toggle="modal" data-target="#newsletter-form" data-backdrop="static">
                                 <span aria-hidden="true" class="icon-envelope-open"></span> Newsletter</a>
                             </li>
                         </ul>
