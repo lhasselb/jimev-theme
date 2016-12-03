@@ -4,7 +4,7 @@
             <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
                 <div class="container">
                     <div class="c-page-title c-pull-left">
-                        <h2 class="c-font-uppercase c-font-sbold">$Title</h2>
+                        <h2 class="c-font-uppercase c-font-sbold">$Title<% if SelectedYear %> ($SelectedYear)<% end_if %></h2>
                     </div>
                     <% include BreadCrumbs %>
                 </div>
@@ -65,7 +65,7 @@
                                 <ul class="c-menu c-arrow-dot1 c-theme">
                                 <% loop ArchiveDates %>
                                 <% if LinkOrCurrent != current %>
-                                    <li><a href="$Link" title="$Year">$Year ( $NewsCount ) </a></li>
+                                    <li><a href="$Link" title="$Year">$Year ($NewsCount) </a></li>
                                 <% else %>
                                     <li class="active">$MenuTitle.XML</li>
                                 <% end_if %>

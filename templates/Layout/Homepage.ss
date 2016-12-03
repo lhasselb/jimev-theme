@@ -34,6 +34,7 @@
                                 <% include Homepage_NewsSummary %>
                             <% end_loop %>
                     </div>
+                    <a href="news" class="btn c-theme-btn c-btn-border-1x c-btn-square">Mehr News</a>
                 </div>
             </div>
             <!-- END: CONTENT/MISC/RECENT-NEWS -->
