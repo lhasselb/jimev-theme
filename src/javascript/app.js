@@ -156,7 +156,12 @@ var App = function() {
             } else {
                 $(this).next().velocity('transition.' + open);
             }
+            // close popover automatically
+            setTimeout(function () {
+                $('.popover').popover('hide');
+            }, 4000);
         });
+
         // add the animation to the modal
         $(".modal").each(function(index) {
             $(this).on('show.bs.modal', function(e) {
