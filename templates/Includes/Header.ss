@@ -42,9 +42,12 @@
                             </li>
                             <li class="c-divider">|</li>
                             <li>
-                                <a href="#" class="jimevLink" title="E-Mail im Newsletter eintragen"
+                                <!-- Moved to Mailchimp
+								<a href="#" class="jimevLink" title="E-Mail im Newsletter eintragen"
                                 data-toggle="modal" data-target="#newsletter-form" data-backdrop="static">
                                 <span aria-hidden="true" class="icon-envelope-open"></span> Newsletter</a>
+								-->
+								<a href="http://eepurl.com/dtRN8r" class="jimevLink" title="E-Mail im Newsletter eintragen">Newsletter</a>
                             </li>
                         </ul>
                         <ul class="c-ext c-theme-ul">
@@ -67,9 +70,9 @@
                     <div class="c-navbar-wrapper clearfix">
                         <div class="c-brand c-pull-left">
                             <a href="$BaseHref" class="c-logo">
-                                <img src="$ThemeDir/dist/img/logos/logo.png" alt="Jim e.V." class="c-desktop-logo">
-                                <img src="$ThemeDir/dist/img/logos/logo.png" alt="Jim e.V." class="c-desktop-logo-inverse">
-                                <img src="$ThemeDir/dist/img/logos/logo-mobile.png" alt="Jim e.V." class="c-mobile-logo"> </a>
+                                <img src="$ThemeDir/dist/img/logos/logo.svg" alt="Jim e.V." class="c-desktop-logo" style="width: 170px; height: 70px;">
+                                <img src="$ThemeDir/dist/img/logos/logo.svg" alt="Jim e.V." class="c-desktop-logo-inverse" style="width: 150px; height: 61px;">
+                                <img src="$ThemeDir/dist/img/logos/logo.svg" alt="Jim e.V." class="c-mobile-logo" style="width: 87px; height: 35px;"> </a>
                             <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
                                 <span class="c-line"></span>
                                 <span class="c-line"></span>
