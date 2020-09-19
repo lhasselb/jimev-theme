@@ -20,8 +20,8 @@
                     </div>
                 </div>
             </div>
-            <!-- END: CONTENT/MISC/ABOUT-3 -->
-            <% if PaginatedLatestNews %>
+            <!-- END: CONTENT/MISC/ABOUT-3 PaginatedLatestNews -->
+            <% if LatestNews %>
             <!-- BEGIN: CONTENT/MISC/RECENT-NEWS -->
             <div class="news c-content-box c-size-md c-bg-grey-1">
                 <div class="container">
@@ -30,7 +30,7 @@
                         <div class="c-line-center"></div>
                     </div>
                     <div class="row" data-auto-height="true">
-                            <% loop PaginatedLatestNews %>
+                            <% loop LatestNews %>
                                 <% include Homepage_NewsSummary %>
                             <% end_loop %>
                     </div>

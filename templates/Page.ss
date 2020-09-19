@@ -3,7 +3,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="$ContentLocale"> <![endif]-->
-
+<!--[if gte IE 9]><!--><html lang="$ContentLocale"><!--<![endif]-->
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8">
